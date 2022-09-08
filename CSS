@@ -43,8 +43,8 @@
     ;--saiko-avatar1: url(https://files.catbox.moe/0dfzm3.png);;
     ;--saiko-avatar2: url(https://files.catbox.moe/leizk1.png);;
     --saiko-footer-particles: url(https://i.imgur.com/3JjhuIh.gif);
-    --saiko-waifu: url(https://i.imgur.com/rjUgKbr.png);
-    --saiko-gif: url(https://i.imgur.com/nCoRLt7.gif);
+    --saiko-waifu: url(https://i.imgur.com/HRuIQHE.png);
+    --saiko-gif: url(https://files.catbox.moe/eebtvl.gif);
     /*Added Icons feature*/
     --saiko-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
     --saiko-owner-icon: url(https://files.catbox.moe/g9vjx5.svg);
@@ -107,6 +107,16 @@ body,
     --color-gray-100: 21,31,46 !important;
     --color-gray-200: 11,22,34 !important;
 }
+
+/*===============================================
+    Font
+=================================================*/
+@font-face{
+    font-family:Persona5;
+    src:url(https://files.catbox.moe/n5szol.eot);
+    src:url(https://files.catbox.moe/n5szol.eot?#iefix) format('embedded-opentype'),url(https://files.catbox.moe/bw49wx.woff2) format('woff2'),url(https://files.catbox.moe/ms79pj.woff) format('woff'),url(https://files.catbox.moe/zwu09d.ttf) format('truetype')
+}
+
 
 /*===============================================
     Body
@@ -515,6 +525,15 @@ display: none;
 /*
 Activity cover background (///￣皿￣)○～ 
 */
+
+.content.container {
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    padding: 30px 30px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: var(--nutella-bs);
+}
+
 @media (min-width: 1540px) {
     .activity-feed > div > div.wrap > div.list.small > a::before {
      content: "";
