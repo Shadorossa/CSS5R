@@ -126,7 +126,7 @@ body {
     cursor: var(--saiko-cursor), auto;
     overflow: overlay;
     background: rgb(var(--color-background)) var(--saiko-background) center/100% fixed;
-    font-family: 'Poppins', Overpass, sans-serif;
+    font-family: 'Persona5', Overpass, sans-serif;
 }
 
 /*Scroll bar*/
@@ -210,7 +210,7 @@ display: none !important;
     border-radius: 35px;
     width: 60%;
     cursor: text;
-    font-family: "Overpass";
+    font-family: "Persona5";
 }
 
 .nav .wrap .search:after {
@@ -390,7 +390,7 @@ display: none;
 
 .mod-badge-wrap.follower-badge:after {
     content: "\f00c" !important;
-    font-family: 'FontAwesome';
+    font-family: 'Persona5';
     font-size: 1rem;
     color: rgb(var(--color-white));
     font-weight: lighter;
@@ -1393,7 +1393,7 @@ a.favourite.media.hohExtraFav {
 /*Favorites Icons*/
 
 .favourites-wrap.staff > a:after {
-    font-family: 'FontAwesome';
+    font-family: 'Persona5';
     transform: translate(5px, 5px);
     display: flex;
     color: rgb(var(--saiko-white));
