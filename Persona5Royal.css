@@ -332,21 +332,6 @@ display: none;
     width: 100px;
 }
 
-.actions>.nav-btn {
-    background: #111;
-    cursor: pointer;
-    position: absolute;
-    z-index: 0;
-    border-radius: 10px;
-}
-.actions>.nav-btn {
-    padding: 8px;
-    font-size: 1.69rem;
-    color: #fff;
-    bottom: -52px;
-    right: 1290px;
-}
-
 .header-wrap .actions .dropdown {
     margin-top: 150px;
     background: rgb(var(--color-overlay),0);
@@ -1284,6 +1269,16 @@ backdrop-filter: blur(2px) !important;
 .header-wrap > div.banner > div.container > div > img:hover {
     transform: scale(1.05);
     transition: var(--saiko-transition-normal);
+}
+
+.actions>.nav-btn {background: #111;cursor: pointer;position: absolute;z-index: 3;border-radius: 10px;}
+
+.actions>.nav-btn {
+    padding: 8px;
+    font-size: 1.69rem;
+    color: #fff;
+    bottom: -42px;
+    right: 20px;
 }
 
 .banner-content h1.name,
