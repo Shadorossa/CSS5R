@@ -1178,50 +1178,14 @@ a.favourite.media.hohExtraFav {
     content: url(https://files.catbox.moe/i15jb7.png);
 }
 
-/*FOOTER PARTICLE BACKGROUND*/
+/*--------------------------------------------------------- Background ---------------------------------------------------------*/
 
 #app 
 > div.wrap 
 > div {
-    background: var(--saiko-footer-particles) no-repeat center/100% !important;
+    background: var(--saiko-footer-particles) no-repeat top/100% !important;
     width: auto;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
-}
-
-.el-dialog__wrapper {
-backdrop-filter: blur(2px) !important;
-}
-
-#nav > div.quick-search.visible > div.input > svg {
-    color: rgb(var(--Persona5-red));
-}
-
-.quick-search.visible {
-    backdrop-filter: blur(2px) !important;
-}
-
-.site-theme-dark .quick-search {
-    background: rgba(18,22,28,0.5);
-}
-
-@media (min-width: 1040px) and (max-width: 1540px) {
-.about a:nth-child(7)::before {
-    content: 'Unzoom to 75% or 67% for best experience.';
-    display: block;
-    font-size: 1rem;
-    pointer-events: none;
-    position: fixed;
-    bottom: 5px;
-    right: 14px;
-    z-index: 20;
-    }
-}
-.activity-feed-wrap > div.activity-edit > h2:after {
-    content: 'Please do not send if it is not important or I will delete it.';
-    padding: 13px;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    color: rgb(var(--saiko-gold));
 }
 
 /*--------------------------------------------------------- Animations ---------------------------------------------------------*/
