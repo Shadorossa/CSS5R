@@ -1178,6 +1178,66 @@ a.favourite.media.hohExtraFav {
     content: url(https://files.catbox.moe/i15jb7.png);
 }
 
+/*--------------------------------------------------------- Limit: Anime ---------------------------------------------------------*/
+
+.favourites-wrap.anime > a:nth-child(6),
+.favourites-wrap.anime > a:nth-child(7),
+.favourites-wrap.anime > a:nth-child(8),
+.favourites-wrap.anime > a:nth-child(9),
+.favourites-wrap.anime > a:nth-child(10),
+.favourites-wrap.anime > a:nth-child(11),
+.favourites-wrap.anime > a:nth-child(12),
+.favourites-wrap.anime > a:nth-child(13),
+.favourites-wrap.anime > a:nth-child(14),
+.favourites-wrap.anime > a:nth-child(15),
+.favourites-wrap.anime > a:nth-child(16),
+.favourites-wrap.anime > a:nth-child(17),
+.favourites-wrap.anime > a:nth-child(18),
+.favourites-wrap.anime > a:nth-child(19),
+.favourites-wrap.anime > a:nth-child(20) { 
+    Display: none;
+}
+
+/*--------------------------------------------------------- Limit: Manga ---------------------------------------------------------*/
+
+.favourites-wrap.manga > a:nth-child(6),
+.favourites-wrap.manga > a:nth-child(7),
+.favourites-wrap.manga > a:nth-child(8),
+.favourites-wrap.manga > a:nth-child(9),
+.favourites-wrap.manga > a:nth-child(10),
+.favourites-wrap.manga > a:nth-child(11),
+.favourites-wrap.manga > a:nth-child(12),
+.favourites-wrap.manga > a:nth-child(13),
+.favourites-wrap.manga > a:nth-child(14),
+.favourites-wrap.manga > a:nth-child(15),
+.favourites-wrap.manga > a:nth-child(16),
+.favourites-wrap.manga > a:nth-child(17),
+.favourites-wrap.manga > a:nth-child(18),
+.favourites-wrap.manga > a:nth-child(19),
+.favourites-wrap.manga > a:nth-child(20) { 
+    Display: none;
+}
+
+/*--------------------------------------------------------- Limit: Characters ---------------------------------------------------------*/
+
+.favourites-wrap.characters > a:nth-child(6),
+.favourites-wrap.characters > a:nth-child(7),
+.favourites-wrap.characters > a:nth-child(8),
+.favourites-wrap.characters > a:nth-child(9),
+.favourites-wrap.characters > a:nth-child(10),
+.favourites-wrap.characters > a:nth-child(11),
+.favourites-wrap.characters > a:nth-child(12),
+.favourites-wrap.characters > a:nth-child(13),
+.favourites-wrap.characters > a:nth-child(14),
+.favourites-wrap.characters > a:nth-child(15),
+.favourites-wrap.characters > a:nth-child(16),
+.favourites-wrap.characters > a:nth-child(17),
+.favourites-wrap.characters > a:nth-child(18),
+.favourites-wrap.characters > a:nth-child(19),
+.favourites-wrap.characters > a:nth-child(20) { 
+    Display: none;
+}
+
 /*--------------------------------------------------------- Background ---------------------------------------------------------*/
 
 #app 
@@ -1187,6 +1247,8 @@ a.favourite.media.hohExtraFav {
     width: auto;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
 }
+
+
 
 /*--------------------------------------------------------- Animations ---------------------------------------------------------*/
 
