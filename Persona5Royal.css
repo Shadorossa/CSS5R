@@ -21,14 +21,14 @@ Fonts & Animations*/
     --saiko-transparent:
     rgb(0 0 0 / 0%);
     --saiko-border: 39, 46, 54;
+    
     /*Customize image*/
     --saiko-background: url(https://files.catbox.moe/fkpnwt.png);
     --saiko-cursor: url(https://files.catbox.moe/4zfy4j.png);
-    ;--saiko-avatar1: url(https://files.catbox.moe/0dfzm3.png);;
-    ;--saiko-avatar2: url(https://files.catbox.moe/leizk1.png);;
+    ;--Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png);;
+    ;--Joker-pfp2: url(https://files.catbox.moe/leizk1.png);;
     --saiko-footer-particles: url(https://i.imgur.com/3JjhuIh.gif);
-    --saiko-waifu: url(https://i.imgur.com/HRuIQHE.png);
-    --saiko-gif: url(https://files.catbox.moe/eebtvl.gif);
+    
     /*Added Icons feature*/
     --saiko-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
     --saiko-owner-icon: url(https://files.catbox.moe/g9vjx5.svg);
@@ -39,8 +39,10 @@ Fonts & Animations*/
     --saiko-techno-circle: url(https://i.imgur.com/fbravZD.png);
     --saiko-pointer-right: url(https://files.catbox.moe/xzed23.svg);
     --saiko-pointer-left: url(https://files.catbox.moe/umjbp6.svg);
-    /*Favorite icons*/
-    --Persona5-Music: url('https://files.catbox.moe/vths1o.png')
+    
+    /*Favorite characters*/
+    --gintoki-image: url(https://i.imgur.com/HRuIQHE.png); --gintoki-gif: url(https://files.catbox.moe/eebtvl.gif);
+    
     /*Preferences*/
     --saiko-animation-normal: 1s;
     --saiko-animation-fast: 0.5s;
@@ -237,7 +239,7 @@ display: none !important;
 /*profile avatar*/
 .banner-content > .avatar {
     padding: 147px 150px;
-    background: var(--saiko-avatar1);
+    background: var(--Joker-pfp1);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -247,7 +249,7 @@ display: none !important;
 
 .banner-content > .avatar:hover {
     padding: 150px 150px;
-    background: var(--saiko-avatar2); no-repeat;
+    background: var(--Joker-pfp2); no-repeat;
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -1171,18 +1173,10 @@ Enhanced liked users overview*/
     transition: 0.5s;
 }
 
-/*GINTOKI COVER*/
+/*Gintoki*/
 
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {
-    background-image: var(--saiko-waifu) !important;
-    transition: var(--saiko-transition-fast);
-}
-
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover {
-    background-image: var(--saiko-gif) !important;
-    transition: var(--saiko-transition-normal);
-    filter: brightness(1.5);
-}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) { background-image: var(--gintoki-image) !important; transition: var(--saiko-transition-fast); }
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover { background-image: var(--gintoki-image) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
 
 a.favourite.media.hohExtraFav {
     display: none;
