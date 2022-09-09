@@ -1133,20 +1133,20 @@ Enhanced liked users overview*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover { background-image: var(--gintoki-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
 
 /*Reinhard*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2) { background-image: var(--Reinhard-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2):hover { background-image: var(--Reinhard-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
+.content.container > div > div:nth-child(2) > div:nth-child(6) > div > a:nth-child(2) { background-image: var(--Reinhard-image) !important; transition: var(--saiko-transition-fast); }
+.content.container > div > div:nth-child(2) > div:nth-child(6) > div > a:nth-child(2):hover { background-image: var(--Reinhard-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
 
 /*Joe*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3) { background-image: var(--Joe-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):hover { background-image: var(--Joe-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
+.content.container > div > div:nth-child(3) > div:nth-child(6) > div > a:nth-child(3) { background-image: var(--Joe-image) !important; transition: var(--saiko-transition-fast); }
+.content.container > div > div:nth-child(3) > div:nth-child(6) > div > a:nth-child(3):hover { background-image: var(--Joe-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
 
 /*Takasugi*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4) { background-image: var(--Takasugi-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):hover { background-image: var(--Takasugi-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
+.content.container > div > div:nth-child(4) > div:nth-child(6) > div > a:nth-child(4) { background-image: var(--Takasugi-image) !important; transition: var(--saiko-transition-fast); }
+.content.container > div > div:nth-child(4) > div:nth-child(6) > div > a:nth-child(4):hover { background-image: var(--Takasugi-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
 
 /*Shiki*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5) { background-image: var(--Shiki-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):hover { background-image: var(--Shiki-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
+.content.container > div > div:nth-child(5) > div:nth-child(6) > div > a:nth-child(5) { background-image: var(--Shiki-image) !important; transition: var(--saiko-transition-fast); }
+.content.container > div > div:nth-child(5) > div:nth-child(6) > div > a:nth-child(5):hover { background-image: var(--Shiki-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
 
 a.favourite.media.hohExtraFav {
     display: none;
