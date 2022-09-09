@@ -304,6 +304,10 @@ img {
     content: var(--saiko-avatar);
 }
 
+.banner[data-v-1cc2919e] {
+    height: 430px;
+}
+
 /* Removed Banner Shadow */
 .banner .shadow {
 display: none;
@@ -408,6 +412,14 @@ display: none;
 
 .stats-wrap {
   transform: scale(1) !important;
+}
+
+.section>.stats-wrap .stat .value {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+    filter: opacity(0);
 }
 
 .user .overview {
@@ -831,13 +843,35 @@ background-color: rgb(var(--color-foreground-grey));
 
 /*Stats=======================================*/
 
+.content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://78.media.tumblr.com/79942a2855eb6338bc214c5602b6718e/tumblr_p77qxeT1pv1w46s3lo1_540.gif) center/102%;
+    background-repeat: no-repeat;
+    border: 5px solid rgb(var(--color-foreground));
+    margin-right: 5px !important;
+    border-radius: 16px !important;
+}
+
 .stats-wrap[data-v-815ccddc] {
     display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 20px;
-    grid-template-columns: auto auto;
-    padding: 20px 30px;
-    text-align: left;
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.stats-wrap > div:nth-child(1) > div.footer {
+    Display: none;
+}
+
+.footer[data-v-815ccddc] {
+    Diplay: none;
+}
+    
+.stats-wrap>div:nth-child(1)>div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(1)>div.stats-wrap>div:nth-child(2)>div.label {
+    color: #3cccb1;
+    font-weight: 400;
+    font-size: 1.2rem;
+    filter: opacity(0);
 }
 
 .stat .value[data-v-815ccddc] {
@@ -853,28 +887,6 @@ background-color: rgb(var(--color-foreground-grey));
     font-weight: 700;
     padding-bottom: 0px;
 }
-
- .stat:nth-child(1) .value[data-v-815ccddc] {
-    font-weight: 700;
-    font-size: 5.5rem;
-}
-
-.stat:nth-child(1) .label {
-    font-weight: 700;    
-    font-size: 2rem;
-}
-   
-.stat[data-v-815ccddc]:nth-child(1) {
-    grid-row-start: span 2;
-}
-
-.stat:nth-child(1) .value[data-v-815ccddc] {
-    font-size: 5.5rem;
-}
-    
-.stat:nth-child(1) .label[data-v-815ccddc] {
-    font-size: 2rem;
-}
     
 .progress[data-v-815ccddc] {
     background: rgba(var(--color-foreground-grey-dark),0.6);
@@ -882,9 +894,6 @@ background-color: rgb(var(--color-foreground-grey));
     padding: 0 16.5%;
 }
 
-.progress .bar[data-v-815ccddc] {
-    background: rgb(var(--saiko-cyan));
-}
 
 .list-stats {
     font-weight: 600;
@@ -892,16 +901,12 @@ background-color: rgb(var(--color-foreground-grey));
     padding: 0!important;
 }
 
-.milestones[data-v-815ccddc] {
-    font-family: Overpass;
-    font-size: 1rem;
-    font-weight: 900;
-    padding: 6px 0;
-    border-radius:  0!important;
- }
-
 .stats-wrap > div:nth-child(1) > div.footer {
 border-radius: 0 0 0 4px;
+}
+
+.list-stats>.stats-wrap .stat:nth-child(3) {
+    Display: none;
 }
 
 .section 
