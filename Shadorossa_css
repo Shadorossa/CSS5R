@@ -1,13 +1,5 @@
 /*
-    Owned and written by Chris (SaikoKurami)
-    * https//anilist.co/user/SaikoKurami
-    Copyright ©️ 2022 - Sinon Custom CSS V.1.2.1
-    * licensed under the MIT License
-
-    * Please Do not Copy this CSS or I will hunt you!
-      ╭(ｏ ‵-′)ノ”(ノ﹏<。)
-
-    Sinon Custom CSS Categorized by:
+        - Structure
     > Site Theme
     > Body
     > Top Navigation
@@ -117,6 +109,13 @@ body,
     src:url(https://files.catbox.moe/n5szol.eot?#iefix) format('embedded-opentype'),url(https://files.catbox.moe/bw49wx.woff2) format('woff2'),url(https://files.catbox.moe/ms79pj.woff) format('woff'),url(https://files.catbox.moe/zwu09d.ttf) format('truetype')
 }
 
+/*===============================================
+    Raiz
+=================================================*/
+
+.activity-entry .cover, .activity-entry .wrap, .activity-entry.activity-text .wrap, .activity-feed .activity-replies .reply, .activity-message .wrap, .content.container>div>div:nth-child(1)>div:nth-child(2)>div, .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1), .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2), .el-input, .el-textarea, .el-textarea__inner, .embed, .favourites-wrap.anime, .favourites-wrap.characters, .favourites-wrap.manga, .favourites-wrap.staff, .favourites-wrap.studios, .header-wrap, .hohPinned .wrap, .input, .input[data-v-93c5960c], .markdown-editor, .medialist.cards .entry-card .cover .image, .medialist.table .list-section, .scroller .load-more, .section>.about .content-wrap, .user-follow .follow-card, .user-social .wrap {
+    border-radius: 16px !important;
+}
 
 /*===============================================
     Body
@@ -841,6 +840,10 @@ background-color: rgb(var(--color-foreground-grey));
     }
 }
 
+https://c.tenor.com/Wjc1kx-4HkoAAAAC/persona-ann.gif {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://i.pinimg.com/originals/4a/ea/f2/4aeaf254f6efa503db1e8d3e9c31cabf.gif) center/100%;
+}
+
 /*Stats=======================================*/
 
 .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1) {
@@ -848,7 +851,17 @@ background-color: rgb(var(--color-foreground-grey));
     background-repeat: no-repeat;
     border: 5px solid rgb(var(--color-foreground));
     margin-right: 5px !important;
-    border-radius: 16px !important;
+    transition: var(--saiko-transition-normal);
+}
+
+.content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2) {
+background-color: rgb(var(--color-foreground));
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://steamuserimages-a.akamaihd.net/ugc/1248008787334023980/95B051D79B393E25CE67144E3805E6ED95B015C5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false) center/102%;
+    background-repeat: no-repeat;
+    background-size: fit;
+    border: 5px solid rgb(var(--color-foreground));
+    margin-left: 5px !important;
+    transition: var(--saiko-transition-normal);
 }
 
 .stats-wrap[data-v-815ccddc] {
@@ -863,8 +876,12 @@ background-color: rgb(var(--color-foreground-grey));
     Display: none;
 }
 
+.stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(1)>div.value, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(2)>div.label, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(2)>div.value, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(1)>div.value, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(2)>div.label, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(2)>div.value {
+    filter: opacity(1);
+}
+
 .footer[data-v-815ccddc] {
-    Diplay: none;
+    Display: none;
 }
     
 .stats-wrap>div:nth-child(1)>div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(1)>div.stats-wrap>div:nth-child(2)>div.label {
@@ -872,6 +889,15 @@ background-color: rgb(var(--color-foreground-grey));
     font-weight: 400;
     font-size: 1.2rem;
     filter: opacity(0);
+}
+
+.stats-wrap>div:nth-child(2)>div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(2)>div.stats-wrap>div:nth-child(2)>div.label {
+    filter: opacity(0);
+    transition: var(--saiko-transition-normal);
+}
+
+.section>.stats-wrap .stat .value {
+    transition: var(--saiko-transition-normal);
 }
 
 .stat .value[data-v-815ccddc] {
@@ -893,7 +919,6 @@ background-color: rgb(var(--color-foreground-grey));
     height: 11px;
     padding: 0 16.5%;
 }
-
 
 .list-stats {
     font-weight: 600;
@@ -1151,148 +1176,6 @@ body .overview .favourite.studio,
     Added Features
 ===============================================*/
 
-/*Sinon Discord Server*/
-.about p:nth-child(16) > a:nth-child(2)::after {
-    content: "";
-    background-image: var(--saiko-stray-guild);
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 20;
-    filter: drop-shadow(4px -1px 2px rgba(21,31,46, 0.5));
-}
-
-.about p:nth-child(16) > a:nth-child(2)::before {
-    content: "";
-    background-image: var(--saiko-techno-circle);
-    background-size: contain;
-    width: 222px;
-    height: 239px;
-    display: block;
-    position: fixed;
-    bottom: -50px;
-    left: -40px;
-    z-index: 20;
-    animation: spin 30s infinite linear;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*Modified HohPinned*/
-
-.hohPinned.activity-text 
-> div 
-> div.text 
-> div.header {
-display: none !important;
-}
-
-.hohPinned.activity-text > div > div.text > div.activity-markdown {
-border-bottom: 0 !important;
-}
-.hohPinned .time {
-display: none !important;
-}
-
-.hohPinned.activity-text > div > div.text > div.header {
-display: none !important;
-}
-
-.hohPinned .action {
-display: none !important;
-}
-
-.hohPinned.activity-text 
-> div 
-> div.text 
-> div.activity-markdown 
-> div {
-    margin-bottom: 0 !important;
-}
-
-.hohPinned.activity-text:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    background: rgb(var(--saiko-transparent));
-    bottom: 26px;
-    left: 0%;
-    right: 0px;
-    min-height: 300px;
-}
-
-
-/*=======*/
-.hohPinned.activity-text {
-    height: 356.938px !important;
-}
-
-
-.activity-feed::-webkit-scrollbar {
-display: none;
-}
-
-@media (min-width: 1040px) and (max-width: 1540px) {
-.activity-feed {
-    max-height: 5150px !important;
-    overflow: auto;
-    }
-}
-
-
-@media (min-width: 1540px){
-.activity-feed-wrap:before {
-    /* content: ''; */
-    background: rgb(var(--color-foreground));
-    width: 800px;
-    height: 356.938px !important;
-    border-radius: 6px;
-    position: absolute;
-    display: inline-block;
-    transform: translateY(-375px);
-    }
-.activity-feed-wrap:after {
-    /* content: url(https://i.imgur.com/4oH5KIQ.gif); */
-    position: absolute;
-    top: 1px;
-    transform: scale(.605) translate(-351px, 890px);
-    }
-.activity-feed-wrap {
-    /* margin-top: 400px !important; */
-    }
-.activity-feed {
-    max-height: 4940px !important;
-    overflow: auto;
-    }
-}
-
-
-.activity-entry.hohPinned.activity-text {
-    position: absolute;
-    transform: translateY(-375px);
-    z-index: 2;
-}
-.activity-feed {
-    border-top: 3px solid rgba(var(--saiko-light-gray), 0.3);
-    border-bottom: 3px solid rgba(var(--saiko-light-gray), 0.3);
-    padding: 15px 10px 0px 10px;
-}
-
-.hohPinned .wrap {
-    height: 356.938px !important;
-    width: 800px;
-}
-
 Enhanced liked users overview*/
 .action.likes:hover .action.likes .users {
     display: flex !important;
@@ -1361,7 +1244,8 @@ Enhanced liked users overview*/
     opacity: 1 !important;
     transition: 0.5s;
 }
-/*SINON COVER*/
+
+/*GINTOKI COVER*/
 
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {
     background-image: var(--saiko-waifu) !important;
