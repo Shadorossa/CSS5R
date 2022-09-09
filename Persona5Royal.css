@@ -4,7 +4,7 @@ Structure: Imported animations and fonts, base,
 
 Fonts & Animations*/
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"); @Import url("https://cdn.jsdelivr.net/gh/Shadorossa/Persona5Font/Persona5.css"); @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"); @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@Import url("https://cdn.jsdelivr.net/gh/Shadorossa/CSS5R/P5Font.css"); @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"); @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
 /*--------------------------------------------------------- Base ---------------------------------------------------------*/
@@ -370,7 +370,7 @@ display: none;
 
 .mod-badge-wrap.follower-badge:after {
     content: url(https://files.catbox.moe/r8xnao.png) !important;
-    font-family: 'FontAwesome';
+    font-family: 'Persona5';
     font-size: 1rem;
     color: rgb(var(--color-white));
     font-weight: lighter;
@@ -1127,56 +1127,11 @@ Enhanced liked users overview*/
     transform: scale(0.91);
     border: 1px solid rgb(var(--Persona5-red));
 }
-.activity-markdown .markdown a[href="https://sptfy.com/70ba"]::before {
-    content: url(https://i.imgur.com/PH1dXVL.png);
-    -webkit-mask-size: auto;
-    position: absolute;
-    bottom: -14px;
-    left: -65px;
-    transform: scale(0.3);
-    z-index: 2;
-    pointer-events: none;
-}
-.activity-markdown .markdown a[href="https://soundcloud.com/saikokurami/sets/animix-sk"]::before {
-    content: url(https://i.imgur.com/0q7p4Dq.png);
-    -webkit-mask-size: auto;
-    position: absolute;
-    bottom: -14px;
-    left: -80px;
-    transform: scale(0.3);
-    z-index: 2;
-}
-.activity-entry.preview.activity-text .text {
-    padding-bottom: 35px !important;
-}
-.activity-markdown .markdown a[href="https://soundcloud.com/saikokurami/sets/animix-sk"]::after,
-.activity-markdown .markdown a[href="https://sptfy.com/70ba"]::after {
-    content: '\f04b';
-    font-family: fontawesome;
-    background-color: rgb(var(--Persona5-red));
-    color: white;
-    padding: 6px 3px 6px 6px;
-    display: inline-block;
-    text-align: center;
-    right: 50px;
-    bottom: 66px;
-    position: absolute;
-    width: 33px;
-    border-radius: 50%;
-    opacity: 0;
-    transition: 0.2s;
-}
-.activity-markdown .markdown a[href="https://soundcloud.com/saikokurami/sets/animix-sk"]:hover:after,
-.activity-markdown .markdown a[href="https://sptfy.com/70ba"]:hover:after {
-    bottom: 74px;
-    opacity: 1 !important;
-    transition: 0.5s;
-}
 
 /*Gintoki*/
 
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) { background-image: var(--gintoki-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover { background-image: var(--gintoki-image) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover { background-image: var(--gintoki-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
 
 a.favourite.media.hohExtraFav {
     display: none;
