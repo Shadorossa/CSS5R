@@ -153,6 +153,7 @@ display: none !important;
 .nav {
     background: rgb(var(--color-foreground)) !important;
     color: rgb(var(--saiko-dirty-white)) !important;
+    font-family: 'Persona5'
 }
 
 #nav {
