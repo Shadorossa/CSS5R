@@ -31,12 +31,10 @@ Fonts & Animations*/
     
     /*Added Icons feature*/
     --saiko-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
-    --saiko-owner-icon: url(https://files.catbox.moe/owiy2r.svg);
+    --saiko-owner-icon: url(https://files.catbox.moe/g9vjx5.svg);
     --saiko-friends-icon: url(https://files.catbox.moe/cnsbi0.svg);
     --saiko-anime-icon: url(https://files.catbox.moe/d19tiw.svg);
     --saiko-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
-    --saiko-stray-guild: url(https://i.imgur.com/M3LznFH.png);
-    --saiko-techno-circle: url(https://i.imgur.com/fbravZD.png);
     --saiko-pointer-right: url(https://files.catbox.moe/xzed23.svg);
     --saiko-pointer-left: url(https://files.catbox.moe/umjbp6.svg);
     
@@ -646,7 +644,7 @@ Hide Guild feature on 1280px screen (๑•̀ㅂ•́)و✧
 /*
 Activity Users Profile ヽ(￣ω￣(￣ω￣〃)ゝ
 */
-a[href="/user/SaikoKurami/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+a[href="/user/Shadorossa/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
     content: '';
     -webkit-mask: var(--saiko-owner-icon) no-repeat 50% 50%;
     -webkit-mask-size: auto;
@@ -723,7 +721,7 @@ a[href="/user/SaikoKurami/"]:not(.avatar):not(.user):not(.link):not(.primary-lin
 /*
  Change name spacing and color 
 */
-a[href="/user/SaikoKurami/"]:not(.avatar):not(.user):not(.link):not(.primary-link) {
+a[href="/user/Shadorossa/"]:not(.avatar):not(.user):not(.link):not(.primary-link) {
     color: rgb(var(--Persona5-red));
     letter-spacing: 0.03em;
 }
@@ -1135,21 +1133,18 @@ a.favourite.media.hohExtraFav {
     display: none;
 }
 
-/* My Waifu Sinon Crown */
+/* Phantom Thieves mask */
 .content.container
 > div 
 > div:nth-child(1) 
 > div:nth-child(6) 
 > div 
 > a:nth-child(1):after {
-    content: '';
-    -webkit-mask: var(--saiko-owner-icon) no-repeat 50% 50%;
-    -webkit-mask-size: auto;
+    content: url(https://files.catbox.moe/rcvksy.png);
     position: absolute;
-    padding: 24px 8px;
-    background-color: rgb(var(--saiko-gold));
+    padding: 24px 0px;
     overflow: overlay;
-    transform: translate(-11px, -31px) rotate(333deg);
+    transform: translate(-24px, -36px) rotate(333deg);
 }
 
 /*Favorites Icons*/
