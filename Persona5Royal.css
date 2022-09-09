@@ -326,16 +326,13 @@ display: none;
 }
 
 .header-wrap .actions .nav-btn {
-    background: rgb(var(--saiko-light-gray));
     margin-bottom: 8px;
     border-radius: 20px;
-    width: 100px;
+    width: 200px;
 }
 
 .header-wrap .actions .dropdown {
-    margin-top: 150px;
-    background: rgb(var(--color-overlay),0);
-    color: rgb(var(--Persona5-red));
+    Display: none;
 }
 
 .header-wrap .nav-wrap {
@@ -916,7 +913,7 @@ border-radius: 0 0 0 4px;
 
 /*Unfollow botton*/
 .unfollow[data-v-39573fe2] {
-    background: rgb(var(--Persona5-red));
+    background: url(https://files.catbox.moe/kn4bdj.png);
 }
 
 .medialist.cards .entry-card .title {
@@ -1271,14 +1268,16 @@ backdrop-filter: blur(2px) !important;
     transition: var(--saiko-transition-normal);
 }
 
-.actions>.nav-btn {background: #111;cursor: pointer;position: absolute;z-index: 3;border-radius: 10px;}
+.actions>.nav-btn {Content: url(https://files.catbox.moe/oytnvc.png);cursor: pointer;position: absolute;z-index: 3;}
 
 .actions>.nav-btn {
-    padding: 8px;
-    font-size: 1.69rem;
-    color: #fff;
-    bottom: -42px;
+    padding: 0px;
+    bottom: -64px;
     right: 20px;
+}
+
+.nav-btn[data-v-1cc2919e] {
+    Background: none;
 }
 
 .banner-content h1.name,
