@@ -1262,7 +1262,7 @@ a.favourite.media.hohExtraFav {
 #app 
 > div.wrap 
 > div {
-    background: var(--saiko-footer-particles) no-repeat top/100% !important;
+    background: var(--Joker-footer) no-repeat top/100% !important;
     width: auto;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
 }
