@@ -153,7 +153,7 @@ display: none !important;
 /*--------------------------------------------------------- Navigation ---------------------------------------------------------*/
 
 .nav {
-    background: rgb(var(--color-foreground)) !important;
+    background: none;
     color: rgb(var(--saiko-dirty-white)) !important;
     font-family: 'Persona5'
 }
@@ -162,7 +162,7 @@ display: none !important;
     display: flex;
     height: 60px;
     justify-content: center;
-    left: calc((100% - 70%) / 2);
+    left: 40px;
     top: 0%;
     width: 40%;
     border-radius: 0 0 70px 70px;
@@ -339,8 +339,12 @@ display: none;
 }
 
 .header-wrap .nav-wrap {
-    background-color: rgb(var(--color-foreground));
-    position: relative;
+    background: none;
+    bottom: 795px;
+    left: 788px;
+    position: absolute;
+    max-width: 1%;
+    margin: auto;
     z-index: 2;
 }
 
@@ -350,8 +354,43 @@ display: none;
     border-bottom: 2px solid rgba(var(--saiko-transparent));
 }
 
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {}
+
+.header-wrap .nav-wrap .nav .link:nth-child(1) {}
+
 .header-wrap .nav-wrap .nav .link:hover {
     border-bottom: 3px solid rgba(var(--color-text),0.7);
+}
+
+.header-wrap .nav-wrap .link:nth-child(1) {
+    position: absolute;
+    bottom: -40px;
+    left: 75px;
+}
+.header-wrap .nav-wrap .link:nth-child(2) {
+    position: absolute;
+    bottom: -110px;
+    left: 70px;
+}
+.header-wrap .nav-wrap .link:nth-child(3) {
+    position: absolute;
+    bottom: -170px;
+    left: 50px;
+}
+.header-wrap .nav-wrap .link:nth-child(4) {
+    position: absolute;
+    bottom: -230px;
+    left: 25px;
+}
+.header-wrap .nav-wrap .link:nth-child(5) {
+    position: absolute;
+    bottom: -290px;
+    left: 10px;
+}
+.header-wrap .nav-wrap .link:nth-child(6) {
+    position: absolute;
+    bottom: -350px;
+    left: -10px;
 }
 
 .header-wrap .nav-wrap .nav .link.router-link-active {
