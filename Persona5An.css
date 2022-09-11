@@ -394,13 +394,13 @@ display: none;
     content: url(https://files.catbox.moe/2sybzd.png);;
     height: 80px;;position: absolute;
     bottom: -290px;
-    left: -80px;
+    left: -50px;
 }
 .header-wrap .nav-wrap .link:nth-child(6) {
     content: url(https://files.catbox.moe/r1ptkq.png);;
     height: 80px;;position: absolute;
     bottom: -350px;
-    left: -100px;
+    left: -60px;
 }
 
 .header-wrap .nav-wrap .nav .link.router-link-active {
