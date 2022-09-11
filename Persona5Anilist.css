@@ -343,7 +343,7 @@ display: none;
 }
 
 .header-wrap .nav-wrap {
-    background: none;
+    /* background: none; */
     bottom: 795px;
     left: 788px;
     position: absolute;
@@ -356,8 +356,8 @@ display: none;
     content: url(https://files.catbox.moe/5kiwxg.png);;
     height: 80px;
     position: absolute;
-    ;;;;;;;;;;;;;;;;;;bottom: -360px;;;;;;;;;;;;;;;;;;;
-    ;;;;;;;;;;;left: -80px;;;;;;;;;;;;;
+    bottom: -360px;
+    left: -80px;
 }
 .user .nav .link.router-link-exact-active.router-link-active {
     background: none
@@ -366,11 +366,15 @@ display: none;
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {}
 
 .header-wrap .nav-wrap .nav .link:nth-child(1) {content: url(https://files.catbox.moe/y6u92z.png);;
-;;;;;;;;;;;;;;;;;;height: 80px;;;;;;;;;;;;;;;}
+    height: 80px;;;;;;;;;;;;;;;}
 
 .header-wrap .nav-wrap .nav .link:hover {
     height: 100px;
     Transition: var(--saiko-transition-ultra-faster);
+}
+
+.media .nav .link.router-link-exact-active.router-link-active, .user .nav .link.router-link-exact-active.router-link-active {
+  background: none !important;
 }
 
 .header-wrap .nav-wrap .link:nth-child(1) {
@@ -382,32 +386,32 @@ display: none;
     content: url(https://files.catbox.moe/8levoy.png);;
     height: 80px;;
     position: absolute;
-    ;;;;;;;;;;bottom: -110px;;;;;;;;;;;
+    bottom: -110px;
     left: -20px;
 }
 .header-wrap .nav-wrap .link:nth-child(3) {
     content: url(https://files.catbox.moe/pyn5n6.png);;
     height: 80px;;position: absolute;
-    ;;;;;;;;;;bottom: -160px;;;;;;;;;;;
+    bottom: -160px;
     left: -40px;
 }
 .header-wrap .nav-wrap .link:nth-child(4) {
     content: url(https://files.catbox.moe/ictb9b.png);;
     height: 80px;;position: absolute;
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;bottom: -210px;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;bottom: -210px;
     left: -45px;
 }
 .header-wrap .nav-wrap .link:nth-child(5) {
     content: url(https://files.catbox.moe/2sybzd.png);;
     height: 80px;;position: absolute;
-    ;;;;;;bottom: -260px;;;;;;;
-    ;;;;;;;;;left: -20px;;;;;;;;;;
+    bottom: -260px;
+    left: -20px;
 }
 .header-wrap .nav-wrap .link:nth-child(6) {
     content: url(https://files.catbox.moe/r1ptkq.png);;
     height: 80px;;position: absolute;
-    ;;;;;;;;;;;;;;;;;bottom: -310px;;;;;;;;;;;;;;;;;;
-    ;;;;;;;;;;;;;;;;;left: -30px;;;;;;;;;;;;;;;;;;
+    bottom: -310px;
+    left: -30px;
 }
 .header-wrap .nav-wrap .link:nth-child(7) {
     content: url(https://files.catbox.moe/5kiwxg.png);
@@ -416,10 +420,6 @@ display: none;
     bottom: -360px;
     left: -80px;
 }
-.media .nav .link.router-link-exact-active.router-link-active, .user .nav .link.router-link-exact-active.router-link-active {
-    background: none;
-}
-
 .header-wrap .nav-wrap .nav .link.router-link-active {
     /* border-bottom: 3px solid rgb(var(--Persona5-red)); */
     /* color: rgb(var(--saiko-dirty-white)); */
