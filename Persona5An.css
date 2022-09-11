@@ -4,7 +4,7 @@ Structure: Imported animations and fonts, base,
 
 Fonts & Animations*/
 
-@Import url("https://cdn.jsdelivr.net/gh/Shadorossa/CSS5R/P5Font.css"); @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"); @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@Import url("https://cdn.jsdelivr.net/gh/Shadorossa/CSS5R/P5Font.css"); @Import url("https://cdn.jsdelivr.net/gh/Shadorossa/CSS5R/P5Font2.css"); @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"); @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
 /*--------------------------------------------------------- Base ---------------------------------------------------------*/
@@ -67,7 +67,10 @@ body,
     --color-text: 159,173,189 !important;
     --color-text-light: 114,138,161 !important;
     --P5-red: 139,0,0 !important;
-    --P5-white: 255,255,255 !important;--P5-mask: 160,0,20 !important;--color-shadow-blue: 0,5,15!important;
+    --P5-white: 255,255,255 !important;
+    --P5-mask: 160,0,20 !important;
+    --P5-black: 0,0,0 !Important;
+    --color-shadow-blue: 0,5,15!important;
     --color-background-1200: 251,251,251!important;
     --color-background-1100: 240,243,246 !important;
     --color-background-1000: 221,230,238 !important;
@@ -155,7 +158,7 @@ display: none !important;
 .nav {
     background: none;
     color: rgb(var(--saiko-dirty-white)) !important;
-    font-family: 'Persona5'
+    font-family: 'Persona5Menu'
 }
 
 #nav {
@@ -356,7 +359,8 @@ display: none;
 
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {}
 
-.header-wrap .nav-wrap .nav .link:nth-child(1) {}
+.header-wrap .nav-wrap .nav .link:nth-child(1) {content: url(https://files.catbox.moe/y6u92z.png);;
+;;;;;;;;;;;;;;height: 80px;;;;;;;;;;;;;;;}
 
 .header-wrap .nav-wrap .nav .link:hover {
     border-bottom: 3px solid rgba(var(--color-text),0.7);
@@ -365,37 +369,43 @@ display: none;
 .header-wrap .nav-wrap .link:nth-child(1) {
     position: absolute;
     bottom: -40px;
-    left: 75px;
+    left: -10px;
 }
 .header-wrap .nav-wrap .link:nth-child(2) {
+    content: url(https://files.catbox.moe/8levoy.png);;
+    height: 80px;;
     position: absolute;
     bottom: -110px;
-    left: 70px;
+    left: -20px;
 }
 .header-wrap .nav-wrap .link:nth-child(3) {
-    position: absolute;
+    content: url(https://files.catbox.moe/pyn5n6.png);;
+    height: 80px;;position: absolute;
     bottom: -170px;
-    left: 50px;
+    left: -40px;
 }
 .header-wrap .nav-wrap .link:nth-child(4) {
-    position: absolute;
+    content: url(https://files.catbox.moe/ictb9b.png);;
+    height: 80px;;position: absolute;
     bottom: -230px;
-    left: 25px;
+    left: -45px;
 }
 .header-wrap .nav-wrap .link:nth-child(5) {
-    position: absolute;
+    content: url(https://files.catbox.moe/2sybzd.png);;
+    height: 80px;;position: absolute;
     bottom: -290px;
-    left: 10px;
+    left: -80px;
 }
 .header-wrap .nav-wrap .link:nth-child(6) {
-    position: absolute;
+    content: url(https://files.catbox.moe/r1ptkq.png);;
+    height: 80px;;position: absolute;
     bottom: -350px;
-    left: -10px;
+    left: -100px;
 }
 
 .header-wrap .nav-wrap .nav .link.router-link-active {
-    border-bottom: 3px solid rgb(var(--Persona5-red));
-    color: rgb(var(--saiko-dirty-white));
+    /* border-bottom: 3px solid rgb(var(--Persona5-red)); */
+    /* color: rgb(var(--saiko-dirty-white)); */
 }
 
 .mod-badge-wrap.follower-badge {
