@@ -100,7 +100,7 @@ body,
 
 /*--------------------------------------------------------- Form ---------------------------------------------------------*/
 
-.activity-entry .cover, .activity-entry .wrap, .activity-entry.activity-text .wrap, .activity-feed .activity-replies .reply, .activity-message .wrap, .content.container>div>div:nth-child(1)>div:nth-child(2)>div, .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1), .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2), .el-input, .el-textarea, .el-textarea__inner, .embed, .favourites-wrap.anime, .favourites-wrap.characters, .favourites-wrap.manga, .favourites-wrap.staff, .favourites-wrap.studios, .header-wrap, .hohPinned .wrap, .input, .input[data-v-93c5960c], .markdown-editor, .medialist.cards .entry-card .cover .image, .medialist.table .list-section, .scroller .load-more, .section>.about .content-wrap, .user-follow .follow-card, .user-social .wrap {
+.activity-entry .cover, .activity-entry .wrap, .activity-entry.activity-text .wrap, .activity-feed .activity-replies .reply, .activity-message .wrap, .content.container>div>div:nth-child(1)>div:nth-child(2)>div, .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1), .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2), .el-input, .el-textarea, .el-textarea__inner, .embed, .favourites-wrap.anime, .favourites-wrap.characters, .favourites-wrap.manga, .favourites-wrap.staff, .favourites-wrap.studios, .hohPinned .wrap, .input, .input[data-v-93c5960c], .markdown-editor, .medialist.cards .entry-card .cover .image, .medialist.table .list-section, .scroller .load-more, .section>.about .content-wrap, .user-follow .follow-card, .user-social .wrap {
     border-radius: 16px !important;
 }
 
@@ -255,7 +255,7 @@ display: none !important;
 }
 
 .banner-content > .avatar:hover {
-    padding: 147px 150px;
+    padding: 150px 150px;
     background: var(--Joker-pfp2); no-repeat;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -352,10 +352,12 @@ display: none;
     z-index: 2;
 }
 
-.header-wrap .nav-wrap .nav .link {
-    margin: 0 30px;
-    font-size: 1.7rem;
-    border-bottom: 2px solid rgba(var(--saiko-transparent));
+.header-wrap .nav-wrap .link:nth-child(9) {
+    content: url(https://files.catbox.moe/5kiwxg.png);;
+    height: 80px;
+    position: absolute;
+    ;;;;;;;;;;;;;;;;;;bottom: -360px;;;;;;;;;;;;;;;;;;;
+    ;;;;;;;;;;;left: -80px;;;;;;;;;;;;;
 }
 .media .nav .link.router-link-exact-active.router-link-active, .user .nav .link.router-link-exact-active.router-link-active {
     background: none
@@ -364,7 +366,7 @@ display: none;
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {}
 
 .header-wrap .nav-wrap .nav .link:nth-child(1) {content: url(https://files.catbox.moe/y6u92z.png);;
-;;;;;;;;;;;;;;height: 80px;;;;;;;;;;;;;;;}
+;;;;;;;;;;;;;;;;;;height: 80px;;;;;;;;;;;;;;;}
 
 .header-wrap .nav-wrap .nav .link:hover {
     height: 100px;
@@ -373,38 +375,38 @@ display: none;
 
 .header-wrap .nav-wrap .link:nth-child(1) {
     position: absolute;
-    bottom: -40px;
+    bottom: -60px;
     left: -10px;
 }
 .header-wrap .nav-wrap .link:nth-child(2) {
     content: url(https://files.catbox.moe/8levoy.png);;
     height: 80px;;
     position: absolute;
-    bottom: -110px;
+    ;;;;;;;;;;bottom: -110px;;;;;;;;;;;
     left: -20px;
 }
 .header-wrap .nav-wrap .link:nth-child(3) {
     content: url(https://files.catbox.moe/pyn5n6.png);;
     height: 80px;;position: absolute;
-    bottom: -170px;
+    ;;;;;;;;;;bottom: -160px;;;;;;;;;;;
     left: -40px;
 }
 .header-wrap .nav-wrap .link:nth-child(4) {
     content: url(https://files.catbox.moe/ictb9b.png);;
     height: 80px;;position: absolute;
-    bottom: -230px;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;bottom: -210px;;;;;;;;;;;;;;;;;;;;;;;;;;;
     left: -45px;
 }
 .header-wrap .nav-wrap .link:nth-child(5) {
     content: url(https://files.catbox.moe/2sybzd.png);;
     height: 80px;;position: absolute;
-    bottom: -290px;
+    ;;;;;;bottom: -260px;;;;;;;
     ;;left: -50px;;;
 }
 .header-wrap .nav-wrap .link:nth-child(6) {
     content: url(https://files.catbox.moe/r1ptkq.png);;
     height: 80px;;position: absolute;
-    bottom: -350px;
+    ;;;;;;;;;;;;;;;;;bottom: -310px;;;;;;;;;;;;;;;;;;
     ;;;;;left: -60px;;;;;;
 }
 
@@ -434,6 +436,7 @@ display: none;
   border-bottom-width: 1.1em;
   border-bottom-style: solid;
   border-bottom-color: black;
+  z-index: 5;
 } 
 
 /*--------------------------------------------------------- Overview ---------------------------------------------------------*/
@@ -1045,7 +1048,8 @@ border-radius: 0 0 0 4px;
    overflow: visible;
 }
 
-/* Favourite Studio */
+/*--------------------------------------------------------- Animation studio ---------------------------------------------------------*/
+
 .overview .favourite.studio {
     min-height: 45px !important;
     max-height: 45px !important;
@@ -1062,29 +1066,17 @@ border-radius: 0 0 0 4px;
     grid-template-rows: repeat(auto-fill,50px);
 }
 
-body .overview .favourite.studio,
-.site-theme-contrast .overview .favourite.studio,
-.site-theme-dark .overview .favourite.studio {
+body .overview .favourite.studio, .site-theme-contrast .overview .favourite.studio, .site-theme-dark .overview .favourite.studio {
     background-color: rgb(var(--color-foreground))!important;
     border: 1px !important;
     border-radius: 5.6px !important;
 }
-
 .overview .favourite.studio {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
-
 .overview .favourite.studio::after {
     display: none !important;
-}
-
-/*Kyoto Animation font-size*/
-.favourites-wrap.studios > a:nth-child(7) {
-    font-size: 1rem;
 }
 
 /*--------------------------------------------------------- Removed ---------------------------------------------------------*/
