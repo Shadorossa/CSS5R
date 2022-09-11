@@ -353,7 +353,7 @@ display: none;
 }
 
 .header-wrap .nav-wrap .link:nth-child(9) {
-    content: url(https://files.catbox.moe/5kiwxg.png);;
+    content: url(https://files.catbox.moe/5kiwxg.png) !important;
     height: 80px;
     position: absolute;
     bottom: -360px;
