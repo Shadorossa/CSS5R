@@ -66,8 +66,8 @@ body,
     --color-foreground-blue-dark: 6,12,19 !important;
     --color-text: 159,173,189 !important;
     --color-text-light: 114,138,161 !important;
-    --color-text-lighter: 133,150,165!important;
-    --color-shadow-blue: 0,5,15!important;
+    --P5-red: 139,0,0 !important;
+    --P5-white: 255,255,255 !important;--P5-mask: 160,0,20 !important;--color-shadow-blue: 0,5,15!important;
     --color-background-1200: 251,251,251!important;
     --color-background-1100: 240,243,246 !important;
     --color-background-1000: 221,230,238 !important;
@@ -196,7 +196,7 @@ display: none !important;
 .nav .wrap .search:after {
     content: "Search AniList";
     margin-left: 10px;
-    color: rgb(var(--color-text-lighter));
+    color: rgb(var(--P5-red));
 }
 
 /*
@@ -390,7 +390,7 @@ display: none;
 }
 
 .section>.stats-wrap .stat .value {
-    color: #fff;
+    color: rgb(var(--P5-red));
     font-size: 3rem;
     font-weight: 700;
     padding-bottom: 8px;
@@ -779,8 +779,8 @@ background-color: rgb(var(--color-foreground-grey));
 .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1) {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://78.media.tumblr.com/79942a2855eb6338bc214c5602b6718e/tumblr_p77qxeT1pv1w46s3lo1_540.gif) center/102%;
     background-repeat: no-repeat;
-    border: 5px solid rgb(var(--color-foreground));
-    margin-right: 5px !important;
+    ;;;;border: 5px solid rgb(var(--color-foreground));;;;;
+    ;;margin-right: 5px !important;;;
     transition: var(--saiko-transition-normal);
 }
 
@@ -808,6 +808,7 @@ background-color: rgb(var(--color-foreground));
 
 .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(1)>div.value, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(2)>div.label, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(2)>div.value, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(1)>div.value, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(2)>div.label, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(2)>div.value {
     filter: opacity(1);
+    transition: var(--saiko-transition-normal);
 }
 
 .footer[data-v-815ccddc] {
@@ -815,10 +816,11 @@ background-color: rgb(var(--color-foreground));
 }
     
 .stats-wrap>div:nth-child(1)>div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(1)>div.stats-wrap>div:nth-child(2)>div.label {
-    color: #3cccb1;
-    font-weight: 400;
-    font-size: 1.2rem;
+    color: rgb(var(--P5-white));
+    font-weight: 700;
+    font-size: 1.1rem;
     filter: opacity(0);
+    transition: var(--saiko-transition-normal);
 }
 
 .stats-wrap>div:nth-child(2)>div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(2)>div.stats-wrap>div:nth-child(2)>div.label {
@@ -831,14 +833,14 @@ background-color: rgb(var(--color-foreground));
 }
 
 .stat .value[data-v-815ccddc] {
-    color: rgb(var(--color-text-lighter));
+    color: rgb(var(--P5-red));
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0px;
 }
 
 .stat .label[data-v-815ccddc] {
-    color: rgb(var(--color-text-lighter));
+    color: rgb(var(--P5-white));
     font-size: 1.1rem;
     font-weight: 700;
     padding-bottom: 0px;
@@ -874,38 +876,30 @@ border-radius: 0 0 0 4px;
 > .list-stats:nth-child(1) 
 .stat:nth-child(2) 
 .value {
-    display: flex;
-    color: rgb(var(--color-text-lighter));
+    display: grid;
+    color: rgb(var(--P5-red));
 }
 
-.section
-  > .stats-wrap
-  > .list-stats:nth-child(1)
-  .stat:nth-child(2)
-  .value:after {
+.section > .stats-wrap > .list-stats:nth-child(1) .stat:nth-child(1) .value:before {
     content: '';
     -webkit-mask: var(--saiko-anime-icon) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 4.5%;
-    background-color: rgba(var(--color-text-light));
+    right: -10%;
+    background-color: rgba(var(--P5-mask));
 }
 
-.section
-  > .stats-wrap
-  > .list-stats:nth-child(2)
-  .stat:nth-child(2)
-  .value:after {
+.section > .stats-wrap > .list-stats:nth-child(2) .stat:nth-child(1) .value:before {
     content: '';
     -webkit-mask: var(--saiko-manga-icon) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 4.5%;
-    background-color: rgba(var(--color-text-light));
+    right: -10%;
+    background-color: rgba(var(--P5-mask));
 }
 
 /*Anime list and manga list cover bugfixed*/
