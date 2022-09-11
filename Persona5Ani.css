@@ -401,15 +401,21 @@ display: none;
     content: url(https://files.catbox.moe/2sybzd.png);;
     height: 80px;;position: absolute;
     ;;;;;;bottom: -260px;;;;;;;
-    ;;left: -50px;;;
+    ;;;;;;;;;left: -20px;;;;;;;;;;
 }
 .header-wrap .nav-wrap .link:nth-child(6) {
     content: url(https://files.catbox.moe/r1ptkq.png);;
     height: 80px;;position: absolute;
     ;;;;;;;;;;;;;;;;;bottom: -310px;;;;;;;;;;;;;;;;;;
-    ;;;;;left: -60px;;;;;;
+    ;;;;;;;;;;;;;;;;;left: -30px;;;;;;;;;;;;;;;;;;
 }
-
+.header-wrap .nav-wrap .link:nth-child(7) {
+    content: url(https://files.catbox.moe/5kiwxg.png);
+    height: 80px;
+    position: absolute;
+    bottom: -360px;
+    left: -80px;
+}
 .header-wrap .nav-wrap .nav .link.router-link-active {
     /* border-bottom: 3px solid rgb(var(--Persona5-red)); */
     /* color: rgb(var(--saiko-dirty-white)); */
@@ -1121,8 +1127,7 @@ body .overview .favourite.studio, .site-theme-contrast .overview .favourite.stud
 
 
 /*link under header-wrap*/
-.header-wrap .nav-wrap .nav .link:nth-child(7),
-.header-wrap .nav-wrap .nav .link:nth-child(8) {
+.header-wrap .nav-wrap .nav .link:nth-child(8), .header-wrap .nav-wrap .nav .link:nth-child(9) {
     width: 0;
     margin: 0;
     padding: 0;
