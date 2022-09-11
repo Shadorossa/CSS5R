@@ -416,6 +416,10 @@ display: none;
     bottom: -360px;
     left: -80px;
 }
+.media .nav .link.router-link-exact-active.router-link-active, .user .nav .link.router-link-exact-active.router-link-active {
+    background: none;
+}
+
 .header-wrap .nav-wrap .nav .link.router-link-active {
     /* border-bottom: 3px solid rgb(var(--Persona5-red)); */
     /* color: rgb(var(--saiko-dirty-white)); */
