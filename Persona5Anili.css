@@ -359,7 +359,7 @@ display: none;
     ;;;;;;;;;;;;;;;;;;bottom: -360px;;;;;;;;;;;;;;;;;;;
     ;;;;;;;;;;;left: -80px;;;;;;;;;;;;;
 }
-.media .nav .link.router-link-exact-active.router-link-active, .user .nav .link.router-link-exact-active.router-link-active {
+.user .nav .link.router-link-exact-active.router-link-active {
     background: none
 }
 
@@ -1131,7 +1131,7 @@ body .overview .favourite.studio, .site-theme-contrast .overview .favourite.stud
 
 
 /*link under header-wrap*/
-.header-wrap .nav-wrap .nav .link:nth-child(8), .header-wrap .nav-wrap .nav .link:nth-child(9) {
+.header-wrap .nav-wrap .nav .link:nth-child(7), .header-wrap .nav-wrap .nav .link:nth-child(8) {
     width: 0;
     margin: 0;
     padding: 0;
