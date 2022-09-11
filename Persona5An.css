@@ -48,10 +48,11 @@ Fonts & Animations*/
     /*Preferences*/
     --saiko-animation-normal: 1s;
     --saiko-animation-fast: 0.5s;
+    --saiko-transition-slow: 2s;
     --saiko-transition-normal: 1s;
     --saiko-transition-fast: 0.5s;
     --saiko-transition-faster: 0.2s;
-    --saiko-transition-slow: 2s;
+    --saiko-transition-ultra-faster: 0.04s;
 }
 
 :root, 
@@ -356,6 +357,9 @@ display: none;
     font-size: 1.7rem;
     border-bottom: 2px solid rgba(var(--saiko-transparent));
 }
+.media .nav .link.router-link-exact-active.router-link-active, .user .nav .link.router-link-exact-active.router-link-active {
+    background: none
+}
 
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {}
 
@@ -363,7 +367,8 @@ display: none;
 ;;;;;;;;;;;;;;height: 80px;;;;;;;;;;;;;;;}
 
 .header-wrap .nav-wrap .nav .link:hover {
-    border-bottom: 3px solid rgba(var(--color-text),0.7);
+    height: 100px;
+    Transition: var(--saiko-transition-ultra-faster);
 }
 
 .header-wrap .nav-wrap .link:nth-child(1) {
@@ -394,13 +399,13 @@ display: none;
     content: url(https://files.catbox.moe/2sybzd.png);;
     height: 80px;;position: absolute;
     bottom: -290px;
-    left: -50px;
+    ;;left: -50px;;;
 }
 .header-wrap .nav-wrap .link:nth-child(6) {
     content: url(https://files.catbox.moe/r1ptkq.png);;
     height: 80px;;position: absolute;
     bottom: -350px;
-    left: -60px;
+    ;;;;;left: -60px;;;;;;
 }
 
 .header-wrap .nav-wrap .nav .link.router-link-active {
@@ -424,6 +429,12 @@ display: none;
     color: rgb(var(--color-white));
     font-weight: lighter;
 }
+
+.header-wrap[data-v-1cc2919e]  {
+  border-bottom-width: 1.1em;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+} 
 
 /*--------------------------------------------------------- Overview ---------------------------------------------------------*/
    
