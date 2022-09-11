@@ -247,17 +247,17 @@ display: none !important;
     background-repeat: no-repeat;
     width: 100%;
     transition: all .5s ease-out;
-    z-index: 100;
+    z-index: 1;
 }
 
 .banner-content > .avatar:hover {
-    padding: 150px 150px;
+    padding: 147px 150px;
     background: var(--Joker-pfp2); no-repeat;
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
     transition: all .5s ease-out;
-    z-index: 100;
+    z-index: 1;
 }
 
 .avatar[data-v-1cc2919e] {
