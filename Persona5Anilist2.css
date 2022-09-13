@@ -359,14 +359,16 @@ display: none;
     bottom: -360px;
     left: -80px;
 }
-.user .nav .link.router-link-exact-active.router-link-active {
-    background: none
+
+.nav[data-v-1cc2919e] {
+    font-size: 0rem;
 }
 
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {}
 
 .header-wrap .nav-wrap .nav .link:nth-child(1) {content: url(https://files.catbox.moe/y6u92z.png);;
-    height: 80px;;;;;;;;;;;;;;;}
+    ;;;/* display: flex; */;;;height: 80px;;;;;;;;;;;;;;;
+    }
 
 .header-wrap .nav-wrap .nav .link:hover {
     height: 100px;
