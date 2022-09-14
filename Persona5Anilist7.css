@@ -13,7 +13,7 @@ Fonts & Animations*/
     /*Color Scheme*/
     --Persona5-red: 209, 0, 3;
     --Persona5-gold: 249, 189, 4;
-    --Persona5-black: 255, 255, 255;
+    --Persona5-black: 0, 0, 0;
     --saiko-light-gray: 65, 81, 100;
     --saiko-dark-gray: 40, 56, 77;
     --saiko-white: 255, 255, 255;
@@ -22,21 +22,16 @@ Fonts & Animations*/
     rgb(0 0 0 / 0%);
     --saiko-border: 39, 46, 54;
     
-    /*Customize image*/
-    --saiko-background: url(https://files.catbox.moe/fkpnwt.png);
-    --saiko-cursor: url(https://files.catbox.moe/4zfy4j.png);
-    ;--Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png);;
-    ;--Joker-pfp2: url(https://files.catbox.moe/leizk1.png);;
-    --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
-    
-    /*Added Icons feature*/
-    --saiko-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
+    /*Persona 5 assets*/
+    --Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png);;
+    --Joker-pfp2: url(https://files.catbox.moe/leizk1.png);;
+    --Persona5-cursor: url(https://files.catbox.moe/4zfy4j.png);
+    --Persona5-background: url(https://files.catbox.moe/fkpnwt.png);
     --saiko-owner-icon: url(https://files.catbox.moe/g9vjx5.svg);
     --saiko-friends-icon: url(https://files.catbox.moe/cnsbi0.svg);
-    --saiko-anime-icon: url(https://files.catbox.moe/d19tiw.svg);
-    --saiko-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
-    --saiko-pointer-right: url(https://files.catbox.moe/xzed23.svg);
-    --saiko-pointer-left: url(https://files.catbox.moe/umjbp6.svg);
+    --Persona5-anime-icon: url(https://files.catbox.moe/d19tiw.svg);
+    --Persona5-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
+    --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
     
     /*Favorite characters*/
     --gintoki-image: url(https://i.imgur.com/HRuIQHE.png); --gintoki-gif: url(https://files.catbox.moe/eebtvl.gif);
@@ -108,9 +103,9 @@ body,
 
 
 body {
-    cursor: var(--saiko-cursor), auto;
+    cursor: var(--Persona5-cursor), auto;
     overflow: overlay;
-    background: rgb(var(--color-background)) var(--saiko-background) center/100% fixed;
+    background: rgb(var(--color-background)) var(--Persona5-background) center/100% fixed;
     font-family: 'Persona5', Overpass, sans-serif;
 }
 
@@ -957,7 +952,7 @@ border-radius: 0 0 0 4px;
 
 .section > .stats-wrap > .list-stats:nth-child(1) .stat:nth-child(1) .value:before {
     content: '';
-    -webkit-mask: var(--saiko-anime-icon) no-repeat 50% 50%;
+    -webkit-mask: var(--Persona5-anime-icon) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     width: 30px;
     height: 30px;
@@ -968,7 +963,7 @@ border-radius: 0 0 0 4px;
 
 .section > .stats-wrap > .list-stats:nth-child(2) .stat:nth-child(1) .value:before {
     content: '';
-    -webkit-mask: var(--saiko-manga-icon) no-repeat 50% 50%;
+    -webkit-mask: var(--Persona5-manga-icon) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     width: 30px;
     height: 30px;
