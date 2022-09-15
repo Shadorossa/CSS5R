@@ -13,7 +13,7 @@ Fonts & Animations*/
     /*Color Scheme*/
     --Persona5-red: 209, 0, 3;
     --Persona5-gold: 249, 189, 4;
-    --Persona5-black: 0, 0, 0;
+    --Persona5-black: 255, 255, 255;
     --saiko-light-gray: 65, 81, 100;
     --saiko-dark-gray: 40, 56, 77;
     --saiko-white: 255, 255, 255;
@@ -22,16 +22,21 @@ Fonts & Animations*/
     rgb(0 0 0 / 0%);
     --saiko-border: 39, 46, 54;
     
-    /*Persona 5 assets*/
-    --Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png);;
-    --Joker-pfp2: url(https://files.catbox.moe/leizk1.png);;
-    --Persona5-cursor: url(https://files.catbox.moe/4zfy4j.png);
-    --Persona5-background: url(https://files.catbox.moe/fkpnwt.png);
+    /*Customize image*/
+    --saiko-background: url(https://files.catbox.moe/fkpnwt.png);
+    --saiko-cursor: url(https://files.catbox.moe/4zfy4j.png);
+    ;--Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png);;
+    ;--Joker-pfp2: url(https://files.catbox.moe/leizk1.png);;
+    --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
+    
+    /*Added Icons feature*/
+    --saiko-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
     --saiko-owner-icon: url(https://files.catbox.moe/g9vjx5.svg);
     --saiko-friends-icon: url(https://files.catbox.moe/cnsbi0.svg);
-    --Persona5-anime-icon: url(https://files.catbox.moe/d19tiw.svg);
-    --Persona5-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
-    --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
+    --saiko-anime-icon: url(https://files.catbox.moe/d19tiw.svg);
+    --saiko-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
+    --saiko-pointer-right: url(https://files.catbox.moe/xzed23.svg);
+    --saiko-pointer-left: url(https://files.catbox.moe/umjbp6.svg);
     
     /*Favorite characters*/
     --gintoki-image: url(https://i.imgur.com/HRuIQHE.png); --gintoki-gif: url(https://files.catbox.moe/eebtvl.gif);
@@ -103,9 +108,9 @@ body,
 
 
 body {
-    cursor: var(--Persona5-cursor), auto;
+    cursor: var(--saiko-cursor), auto;
     overflow: overlay;
-    background: rgb(var(--color-background)) var(--Persona5-background) center/100% fixed;
+    background: rgb(var(--color-background)) var(--saiko-background) center/100% fixed;
     font-family: 'Persona5', Overpass, sans-serif;
 }
 
@@ -952,7 +957,7 @@ border-radius: 0 0 0 4px;
 
 .section > .stats-wrap > .list-stats:nth-child(1) .stat:nth-child(1) .value:before {
     content: '';
-    -webkit-mask: var(--Persona5-anime-icon) no-repeat 50% 50%;
+    -webkit-mask: var(--saiko-anime-icon) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     width: 30px;
     height: 30px;
@@ -963,7 +968,7 @@ border-radius: 0 0 0 4px;
 
 .section > .stats-wrap > .list-stats:nth-child(2) .stat:nth-child(1) .value:before {
     content: '';
-    -webkit-mask: var(--Persona5-manga-icon) no-repeat 50% 50%;
+    -webkit-mask: var(--saiko-manga-icon) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     width: 30px;
     height: 30px;
@@ -1055,66 +1060,6 @@ border-radius: 0 0 0 4px;
    overflow: visible;
 }
 
-/*--------------------------------------------------------- Limit: Anime ---------------------------------------------------------*/
-
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(6),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(7),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(8),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(9),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(10),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(11),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(12),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(13),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(14),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(15),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(16),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(17),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(18),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(19),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(20) { 
-    Display: none;
-}
-
-/*--------------------------------------------------------- Limit: Manga ---------------------------------------------------------*/
-
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(6),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(7),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(8),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(9),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(10),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(11),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(12),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(13),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(14),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(15),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(16),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(17),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(18),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(19),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(20) { 
-    Display: none;
-}
-
-/*--------------------------------------------------------- Limit: Characters ---------------------------------------------------------*/
-
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(6),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(7),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(8),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(9),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(10),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(11),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(12),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(13),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(14),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(15),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(16),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(17),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(18),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(19),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(20) { 
-    Display: none;
-}
-
 /*--------------------------------------------------------- Animation studio ---------------------------------------------------------*/
 
 .overview .favourite.studio {
@@ -1145,26 +1090,6 @@ body .overview .favourite.studio, .site-theme-contrast .overview .favourite.stud
 .overview .favourite.studio::after {
     display: none !important;
 }
-
-/*--------------------------------------------------------- Favorites: characters ---------------------------------------------------------*/
-
-/*Gintoki*/div.favourites-wrap.characters > a:nth-child(1) {background-image: url(https://i.imgur.com/IYW1nUo.png) !important;}
-/*Reinhard*/div.favourites-wrap.characters > a:nth-child(2) {background-image: url(https://i.imgur.com/e0AXlHW.png) !important;}
-/*Joe*/div.favourites-wrap.characters > a:nth-child(3) {background-image: url(https://i.pinimg.com/236x/a9/8d/20/a98d20c2af0206c8cbdb9a71dd64fe90.jpg) !important;}
-/*Shinsuke Takasugi*/div.favourites-wrap.characters > a:nth-child(4) {background-image: url(https://i.imgur.com/IjJOcJ6.png) !important;}
-/*Shiki Ryougi*/div.favourites-wrap.characters > a:nth-child(5) {background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49ce2ff3-2d12-464c-bb60-7387f20d677e/dbd61vg-5015fcd3-ef86-4638-b77b-cc7177357649.jpg/v1/fit/w_300,h_800,q_70,strp/shiki_by_miura_n315_dbd61vg-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvNDljZTJmZjMtMmQxMi00NjRjLWJiNjAtNzM4N2YyMGQ2NzdlXC9kYmQ2MXZnLTUwMTVmY2QzLWVmODYtNDYzOC1iNzdiLWNjNzE3NzM1NzY0OS5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.rdM4BndunT8IjLQmBM3ADKrbL2B5TwIAT_AzA-_QVB8) !important;}
-/*Kyo Sohma*/div.favourites-wrap.characters > a:nth-child(6) {background-image: url(https://i.imgur.com/snK1glX.png) !important;}
-/*Phosphophyllite*/div.favourites-wrap.characters > a:nth-child(7) {background-image: url(https://i.imgur.com/9QrZ5dg.png) !important;}
-/*Jack Vessalius*/div.favourites-wrap.characters > a:nth-child(8) {background-image: url(https://i.imgur.com/647MG5y.png) !important;}
-/*Johan*/div.favourites-wrap.characters > a:nth-child(9) {background-image: url(https://i.imgur.com/hNuaxnz.png) !important;}
-/*Ginko*/div.favourites-wrap.characters > a:nth-child(10) {background-image: url(https://i.imgur.com/5prEbzR.png) !important;}
-/*Makise*/div.favourites-wrap.characters > a:nth-child(11) {background-image: url(https://i.imgur.com/Mta4Eij.png) !important;}
-/*Griffith*/div.favourites-wrap.characters > a:nth-child(12) {background-image: url(https://i.imgur.com/j0DwTkz.png) !important;}
-/*Rei Kiriyama*/div.favourites-wrap.characters > a:nth-child(13) {background-image: url(https://i.imgur.com/qM7SLgb.png) !important;}
-/*Ougi Oshino*/div.favourites-wrap.characters > a:nth-child(14) {background-image: url(https://i.imgur.com/HHbi4mb.png) !important;}
-/*Naoto*/div.favourites-wrap.characters > a:nth-child(15) {background-image: url(https://i.imgur.com/wxxdXhR.png) !important;}
-/*Naoto*/div.favourites-wrap.characters > a:nth-child(16) {background-image: url(https://i.imgur.com/9A8imtj.png) !important;}
-
 
 /*--------------------------------------------------------- Removed ---------------------------------------------------------*/
 
@@ -1329,6 +1254,85 @@ a.favourite.media.hohExtraFav {
     content: url(https://files.catbox.moe/i15jb7.png);
 }
 
+/*--------------------------------------------------------- Limit: Anime ---------------------------------------------------------*/
+
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(6),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(7),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(8),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(9),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(10),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(11),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(12),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(13),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(14),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(15),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(16),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(17),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(18),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(19),
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(20) { 
+    Display: none;
+}
+
+/*--------------------------------------------------------- Limit: Manga ---------------------------------------------------------*/
+
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(6),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(7),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(8),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(9),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(10),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(11),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(12),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(13),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(14),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(15),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(16),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(17),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(18),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(19),
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(20) { 
+    Display: none;
+}
+
+/*--------------------------------------------------------- Limit: Characters ---------------------------------------------------------*/
+
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(6),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(7),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(8),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(9),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(10),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(11),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(12),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(13),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(14),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(15),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(16),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(17),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(18),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(19),
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(20) { 
+    Display: none;
+}
+
+/*--------------------------------------------------------- Background ---------------------------------------------------------*/
+
+
+/*Gintoki*/div.favourites-wrap.characters > a:nth-child(1) {background-image: url(https://i.imgur.com/IYW1nUo.png) !important;}
+/*Reinhard*/div.favourites-wrap.characters > a:nth-child(2) {background-image: url(https://i.imgur.com/e0AXlHW.png) !important;}
+/*Joe*/div.favourites-wrap.characters > a:nth-child(3) {background-image: url(https://i.pinimg.com/236x/a9/8d/20/a98d20c2af0206c8cbdb9a71dd64fe90.jpg) !important;}
+/*Shinsuke Takasugi*/div.favourites-wrap.characters > a:nth-child(4) {background-image: url(https://i.imgur.com/IjJOcJ6.png) !important;}
+/*Shiki Ryougi*/div.favourites-wrap.characters > a:nth-child(5) {background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49ce2ff3-2d12-464c-bb60-7387f20d677e/dbd61vg-5015fcd3-ef86-4638-b77b-cc7177357649.jpg/v1/fit/w_300,h_800,q_70,strp/shiki_by_miura_n315_dbd61vg-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvNDljZTJmZjMtMmQxMi00NjRjLWJiNjAtNzM4N2YyMGQ2NzdlXC9kYmQ2MXZnLTUwMTVmY2QzLWVmODYtNDYzOC1iNzdiLWNjNzE3NzM1NzY0OS5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.rdM4BndunT8IjLQmBM3ADKrbL2B5TwIAT_AzA-_QVB8) !important;}
+/*Kyo Sohma*/div.favourites-wrap.characters > a:nth-child(6) {background-image: url(https://i.imgur.com/snK1glX.png) !important;}
+/*Phosphophyllite*/div.favourites-wrap.characters > a:nth-child(7) {background-image: url(https://i.imgur.com/9QrZ5dg.png) !important;}
+/*Jack Vessalius*/div.favourites-wrap.characters > a:nth-child(8) {background-image: url(https://i.imgur.com/647MG5y.png) !important;}
+/*Ginko*/div.favourites-wrap.characters > a:nth-child(9) {background-image: url(https://i.imgur.com/5prEbzR.png) !important;}
+/*Makise*/div.favourites-wrap.characters > a:nth-child(10) {background-image: url(https://i.imgur.com/Mta4Eij.png) !important;}
+/*Griffith*/div.favourites-wrap.characters > a:nth-child(11) {background-image: url(https://i.imgur.com/j0DwTkz.png) !important;}
+/*Rei Kiriyama*/div.favourites-wrap.characters > a:nth-child(12) {background-image: url(https://i.imgur.com/qM7SLgb.png) !important;}
+/*Ougi Oshino*/div.favourites-wrap.characters > a:nth-child(13) {background-image: url(https://i.imgur.com/HHbi4mb.png) !important;}
+/*Naoto*/div.favourites-wrap.characters > a:nth-child(14) {background-image: url(https://i.imgur.com/wxxdXhR.png) !important;}
+/*Johan*/div.favourites-wrap.characters > a:nth-child(15) {background-image: url(https://i.imgur.com/hNuaxnz.png) !important;}
+/*Naoto*/div.favourites-wrap.characters > a:nth-child(16) {background-image: url(https://i.imgur.com/9A8imtj.png) !important;}
 
 /*--------------------------------------------------------- Background ---------------------------------------------------------*/
 
