@@ -16,6 +16,7 @@ Credits to the original structure: @SaikoKurami */
     --Persona5-red: 209, 0, 3;
     --Persona5-gold: 249, 189, 4;
     --Persona5-black: 255, 255, 255;
+    --Persona5-white: 255,255,255;
     --saiko-light-gray: 65, 81, 100;
     --saiko-dark-gray: 40, 56, 77;
     --saiko-white: 255, 255, 255;
@@ -54,9 +55,9 @@ body,
 .site-theme-dark, 
 .site-theme-contrast {
     --color-background: 11,22,34 !important;
-    --color-foreground: 21,31,46 !important;
+    --color-foreground: 28,28,29 !important;
     --color-foreground-grey: 15,22,31 !important;
-    --color-foreground-grey-dark: 6,12,19 !important;
+    --color-foreground-grey-dark: 10,5,10 !important;
     --color-foreground-blue: 15,22,31 !important;
     --color-foreground-blue-dark: 6,12,19 !important;
     --color-text: 159,173,189 !important;
@@ -191,13 +192,13 @@ display: none !important;
 .nav .wrap .search:after {
     content: "Search AniList";
     margin-left: 10px;
-    color: rgb(var(--P5-red));
+    color: rgb(var(--Persona5-red));
 }
 
 .nav .wrap .search:hover {
     border: 3px solid rgba(var(--saiko-border));
     padding: 7px;
-    transition: var(--saiko-transition-faster);
+    transition: var(--transition-faster);
 }
 
 .nav .wrap .user {
@@ -356,7 +357,7 @@ display: none;
 
 .header-wrap .nav-wrap .nav .link:hover {
     height: 100px;
-    Transition: var(--saiko-transition-ultra-faster);
+    Transition: var(--transition-ultra-faster);
 }
 
 .media .nav .link.router-link-exact-active.router-link-active, .user .nav .link.router-link-exact-active.router-link-active {
@@ -441,7 +442,7 @@ display: none;
 .time .action.active {
     color: rgba(var(--Persona5-red)) !important;
     animation: swing;
-    animation-duration: var(--saiko-animation-normal);
+    animation-duration: var(--animation-normal);
 }
 
 .stats-wrap {
@@ -449,7 +450,7 @@ display: none;
 }
 
 .section>.stats-wrap .stat .value {
-    color: rgb(var(--P5-red));
+    color: rgb(var(--Persona5-red));
     font-size: 3rem;
     font-weight: 700;
     padding-bottom: 8px;
@@ -686,20 +687,20 @@ Activity cover background (///￣皿￣)○～
 .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1) {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://78.media.tumblr.com/79942a2855eb6338bc214c5602b6718e/tumblr_p77qxeT1pv1w46s3lo1_540.gif) center/102%;
     background-repeat: no-repeat;
-    ;;;;border: 5px solid rgb(var(--color-foreground));;;;;
+    ;;;;;;border: 2px solid rgb(var(--color-foreground));;;;;;;
     ;;margin-right: 5px !important;;;
-    transition: var(--saiko-transition-normal);
+    transition: var(--transition-normal);
 }
 
 .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2) {
-background-color: rgb(var(--color-foreground));
+    background-color: rgb(var(--color-foreground));
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://steamuserimages-a.akamaihd.net/ugc/1248008787334023980/95B051D79B393E25CE67144E3805E6ED95B015C5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false) center/102%;
     background-repeat: no-repeat;
     background-size: fit;
-    border: 5px solid rgb(var(--color-foreground));
+    ;;border: 2px solid rgb(var(--color-foreground));;;
     margin-left: 5px !important;
-    transition: var(--saiko-transition-normal);
-}
+    transition: var(--transition-normal);
+    }
 
 .stats-wrap[data-v-815ccddc] {
     display: grid;
@@ -715,7 +716,7 @@ background-color: rgb(var(--color-foreground));
 
 .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(1)>div.value, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(2)>div.label, .stats-wrap>div:nth-child(1):hover div.stats-wrap>div:nth-child(2)>div.value, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(1)>div.value, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(2)>div.label, .stats-wrap>div:nth-child(2):hover div.stats-wrap>div:nth-child(2)>div.value {
     filter: opacity(1);
-    transition: var(--saiko-transition-normal);
+    transition: var(--transition-normal);
 }
 
 .footer[data-v-815ccddc] {
@@ -723,24 +724,24 @@ background-color: rgb(var(--color-foreground));
 }
     
 .stats-wrap>div:nth-child(1)>div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(1)>div.stats-wrap>div:nth-child(2)>div.label {
-    color: rgb(var(--P5-white));
+    color: rgb(var(--Persona5-white));
     font-weight: 700;
     font-size: 1.1rem;
     filter: opacity(0);
-    transition: var(--saiko-transition-normal);
+    transition: var(--transition-normal);
 }
 
 .stats-wrap>div:nth-child(2)>div.stats-wrap>div:nth-child(1)>div.label, .stats-wrap>div:nth-child(2)>div.stats-wrap>div:nth-child(2)>div.label {
     filter: opacity(0);
-    transition: var(--saiko-transition-normal);
+    transition: var(--transition-normal);
 }
 
 .section>.stats-wrap .stat .value {
-    transition: var(--saiko-transition-normal);
+    transition: var(--transition-normal);
 }
 
 .stat .value[data-v-815ccddc] {
-    color: rgb(var(--P5-red));
+    color: rgb(var(--Persona5-red));
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0px;
@@ -784,7 +785,7 @@ border-radius: 0 0 0 4px;
 .stat:nth-child(2) 
 .value {
     display: grid;
-    color: rgb(var(--P5-red));
+    color: rgb(var(--Persona5-red));
 }
 
 .section > .stats-wrap > .list-stats:nth-child(1) .stat:nth-child(1) .value:before {
@@ -976,7 +977,7 @@ body .overview .favourite.studio, .site-theme-contrast .overview .favourite.stud
 
 .medialist.cards .entry-card .title:hover {
     white-space: normal !important;
-    transition: var(--saiko-transition-normal);
+    transition: var(--transition-normal);
 }
 
 /*--------------------------------------------------------- Features ---------------------------------------------------------*/
@@ -991,8 +992,8 @@ Enhanced liked users overview*/
 }
 .action.likes .users {
     animation: fadeInRight;
-    animation-duration: var(--saiko-animation-fast);
-    transition: var(--saiko-transition-fast);
+    animation-duration: var(--animation-fast);
+    transition: var(--transition-fast);
     background: none !important;
 }
 .action.likes .users > a {
