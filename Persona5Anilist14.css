@@ -603,12 +603,12 @@ Activity cover background (///￣皿￣)○～
     }
 }
 
+
 .wrap 
 > div.list.small 
 > a {
     box-shadow: 0px 0 10px 20px rgb(0 0 0 / 10%);
 }
-
 
 .details .status {
   transition: 1s;
@@ -704,6 +704,84 @@ Hide Guild feature on 1280px screen (๑•̀ㅂ•́)و✧
 > div.status 
 > a {
     width: 600px;
+}
+
+/*
+Activity Users Profile ヽ(￣ω￣(￣ω￣〃)ゝ
+*/
+a[href="/user/SaikoKurami/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+    content: '';
+    -webkit-mask: var(--saiko-owner-icon) no-repeat 50% 50%;
+    -webkit-mask-size: auto;
+    position: inherit;
+    padding: 10px 8px;
+    background-color: rgb(var(--saiko-gray));
+    margin-left: 8px;
+}
+
+.text 
+> .header
+> .name::after, .reply 
+> .header
+> .name::after {
+    content: '';
+    mask: var(--saiko-friends-icon) no-repeat 50% 50%;
+    -webkit-mask: var(--saiko-friends-icon) no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: auto;
+    position: inherit;
+    padding: 10px 8px;
+    background-color: rgb(var(--saiko-gray));
+    margin-left: 8px;
+}
+
+.activity-message > .wrap > .time, .activity-text > .wrap > .time {
+    left: 72px;
+    top: 43px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.time {
+    font-weight: 700;
+}
+
+.text > div.header > a.name {
+    display: inline-block;
+    height: 40px;
+    line-height: 30px;
+    margin-left: 12px;
+    vertical-align: top;
+}
+
+.text .donator-badge {
+    color: rgb(var(--saiko-cyan));
+    background: none !important;
+    display: block;
+    overflow: hidden;
+    right: 18px;
+    top: 16px !important;
+    position: absolute !important;
+}
+.donator-badge.rainbow {
+    display: none !important;
+}
+.mod-badge {
+    margin-top: 1px;
+    margin-right: 42px;
+}
+.mod-badge svg {
+    margin-top: -5px !important;
+    margin-right: 2px !important;
+}
+.mod-badge-wrap.donator-badge {
+    background: none !important;
+    color: rgb(var(--saiko-cyan));
+}
+.markdown blockquote {
+    border-left: solid 7px rgb(var(--saiko-cyan));
 }
 
 /*
