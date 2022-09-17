@@ -1,8 +1,10 @@
-/* Persona 5 Royal.css - Shadorossa v1.0
+/* Persona 5 Royal.css - Shadorossa v1.0 */
 
-Structure: Imported animations and fonts, base, 
+/* Structure: Imported animations and fonts, base, 
 
-Fonts & Animations*/
+Credits to the original structure: @SaikoKurami */
+
+/* - Fonts & Animations - */
 
 @Import url("https://cdn.jsdelivr.net/gh/Shadorossa/CSS5R/P5Font.css"); @Import url("https://cdn.jsdelivr.net/gh/Shadorossa/CSS5R/P5Font2.css"); @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"); @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
@@ -20,14 +22,16 @@ Fonts & Animations*/
     --saiko-dirty-white: 219, 219, 219;
     --saiko-transparent: rgb(0 0 0 / 0%);
     --saiko-border: 39, 46, 54;
-    
-    /*Customize image*/
+
+    /* - Persona 5 Royal assets - */
     --P5-Wallpaper: url(https://files.catbox.moe/fkpnwt.png); --P5-cursor: url(https://files.catbox.moe/4zfy4j.png); --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
     --Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png); --Joker-pfp2: url(https://files.catbox.moe/leizk1.png);
     --P5-anime-icon: url(https://files.catbox.moe/d19tiw.svg); --P5-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
 
-    
-    /*Favorite characters*/
+    /* - Favorite anime - (Future)*/
+    /* - Favorite manga - (Future)*/
+
+    /* - Favorite characters - */
     --gintoki-image: url(https://i.imgur.com/HRuIQHE.png); --gintoki-gif: url(https://files.catbox.moe/eebtvl.gif);
     --Reinhard-image: url(https://i.imgur.com/wOGVvzL.png); --Reinhard-gif: url(https://pa1.narvii.com/6255/7341928f059fac79f12fe9bf65d10854c436748a_hq.gif);
     --Joe-image: url(https://i.pinimg.com/550x/93/71/f6/9371f646bff2d26360c8d9c42f6263cf.jpg); --Joe-gif: url(https://c.tenor.com/0__k92cmME4AAAAC/drink-thirsty.gif);
@@ -35,13 +39,14 @@ Fonts & Animations*/
     --Shiki-image: url(https://files.catbox.moe/oegd4i.png); --Shiki-gif: url(https://c.tenor.com/Ec4hso3hz6EAAAAC/shiki-ryougi.gif);
     
     /*Preferences*/
-    --saiko-animation-normal: 1s;
-    --saiko-animation-fast: 0.5s;
-    --saiko-transition-slow: 2s;
-    --saiko-transition-normal: 1s;
-    --saiko-transition-fast: 0.5s;
-    --saiko-transition-faster: 0.2s;
-    --saiko-transition-ultra-faster: 0.04s;
+    --animation-slow: 1.5s;
+    --animation-normal: 1s;
+    --animation-fast: 0.5s;
+    --transition-Slow: 2s;
+    --transition-normal: 1s;
+    --transition-fast: 0.5s;
+    --transition-faster: 0.2s;
+    --transition-ultra-faster: 0.04s;
 }
 
 :root, 
@@ -86,7 +91,7 @@ body,
 
 /*--------------------------------------------------------- Form ---------------------------------------------------------*/
 
-.activity-entry .cover, .activity-entry .wrap, .activity-entry.activity-text .wrap, .activity-feed .activity-replies .reply, .activity-message .wrap, .content.container>div>div:nth-child(1)>div:nth-child(2)>div, .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1), .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2), .el-input, .el-textarea, .el-textarea__inner, .embed, .favourites-wrap.anime, .favourites-wrap.characters, .favourites-wrap.manga, .favourites-wrap.staff, .favourites-wrap.studios, .hohPinned .wrap, .input, .input[data-v-93c5960c], .markdown-editor, .medialist.cards .entry-card .cover .image, .medialist.table .list-section, .scroller .load-more, .section>.about .content-wrap, .user-follow .follow-card, .user-social .wrap {
+.activity-entry .cover, .activity-entry .wrap, .activity-entry.activity-text .wrap, .activity-feed .activity-replies .reply, .activity-message .wrap, .content.container>div>div:nth-child(1)>div:nth-child(2)>div, .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1), .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2), .el-input, .el-textarea, .el-textarea__inner, .embed, .favourites-wrap.anime, .favourites-wrap.characters, .favourites-wrap.staff, .favourites-wrap.studios, .hohPinned .wrap, .input, .input[data-v-93c5960c], .markdown-editor, .medialist.cards .entry-card .cover .image, .medialist.table .list-section, .scroller .load-more, .section>.about .content-wrap, .user-follow .follow-card, .user-social .wrap {
     border-radius: 16px !important;
 }
 
@@ -102,7 +107,7 @@ body {
 
 /*Scroll bar*/
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
     background: rgb(var(--saiko-transparent));
 }
 
@@ -189,12 +194,6 @@ display: none !important;
     color: rgb(var(--P5-red));
 }
 
-/*
-#nav > div.wrap > div.user > a {
-    background: rgb(var(--Persona5-red)) !important;
-}
-*/
-
 .nav .wrap .search:hover {
     border: 3px solid rgba(var(--saiko-border));
     padding: 7px;
@@ -226,7 +225,7 @@ display: none !important;
   Display:none
 }
 
-/*--------------------------------------------------------- Header ---------------------------------------------------------*/
+/*--------------------------------------------------------- Banner: header ---------------------------------------------------------*/
 
 
 /*profile avatar*/
@@ -241,7 +240,7 @@ display: none !important;
 }
 
 .banner-content > .avatar:hover {
-    padding: 150px 150px;
+    padding: 147px 150px;
     background: var(--Joker-pfp2); no-repeat;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -291,9 +290,6 @@ display: none;
     max-height: 230px;
     max-width: 160px;
     width: 100%;
-    /* border-radius: 50%; */
-    /* border: 9px solid rgb(var(--Persona5-red)); */
-    /* margin-bottom: 10px; */
 }
 
 .banner-content .name {
@@ -308,8 +304,7 @@ display: none;
     margin-bottom: -5px;
     margin-left: -45px;
     content: url(https://files.catbox.moe/qnq7yr.png);;
-    width: 250px
-    ;;;;;;;;;;;;
+    width: 250px;
     filter: drop-shadow(0px 0px 0px rgba(0,0,0,0));
 }
 
@@ -471,8 +466,8 @@ display: none;
 }
 
 .favourites .favourite {
-    border-radius: 9px !important;
-    border: 5px solid rgb(var(--color-foreground));
+    border-radius: 5px !important;
+    border: 2px solid rgb(var(--color-foreground));
 }
 
 .overview .favourites 
@@ -510,24 +505,15 @@ display: none;
 .activity-manga_list .wrap {
     max-height: 70px;
     overflow: hidden;
-    transition: var(--saiko-transition-faster);
+    transition: var(--transition-faster);
     }
 }
-
-/*
-@media (min-width: 1540px) {
-.activity-anime_list .wrap:hover,
-.activity-manga_list .wrap:hover {
-    max-height: 200px;
-    }
-}
-*/
 
 @media (min-width: 1540px) {
 .activity-anime_list .wrap:hover .cover,
 .activity-manga_list .wrap:hover .cover {
     max-height: 200px;
-    transition: var(--saiko-transition-faster);
+    transition: var(--transition-faster);
     }
 }
 
@@ -652,9 +638,7 @@ Activity cover background (///￣皿￣)○～
   color: rgb(var(--color-text)) !important;
 }
 
-/* 
-Activity Title-overflow fixed !(*￣(￣　*)
-*/
+/* - Activity Title-overflow fixed - */
 @media (min-width: 1540px) {
 .list.small 
     > div
@@ -687,21 +671,6 @@ Activity Title-overflow fixed !(*￣(￣　*)
     line-height: 30px;
     margin-left: 12px;
     vertical-align: top;
-}
-
-/*Spoiler*/
-.markdown .markdown-spoiler:before {
-    color: rgb(var(--color-background));
-    background: rgba(var(--Persona5-red),0.2);
-    border-radius: 40px;
-    content: "S P O I L E R";
-    padding: 2px 16px;
-    font-size: 0.7rem;
-    font-weight: bold;
-}
-
-.markdown .markdown-spoiler.spoiler-visible .hide-spoiler, .markdown .markdown-spoiler.spoiler-visible span {
-    font-size: 1rem;
 }
 
 /* - Load more - */
@@ -860,55 +829,21 @@ border-radius: 0 0 0 4px;
 .tooltip {
     backdrop-filter: blur(2px) !important;
 }
-
-
-/*Bio stretched to max-height*/
-.content-wrap {
-  max-height: none !important;
-}
-.cover {
-    border-radius: 6px !important;
-}
-
-.favourites {
-    margin-top: 0 !important;
-}
     
 /* favourite enlarge while hover*/
 .favourite[data-v-0317d914] {
-   transition: var(--saiko-transition-faster);
+   transition: var(--transition-faster);
    border-radius: 20%;
    position: static;
    overflow: visible;
 }
 
-/*Bio Favourites*/
-.about center > a:nth-child(1) > img,
-.about center > a:nth-child(2) > img,
-.about center > a:nth-child(3) > img,
-.about center > a:nth-child(4) > img,
-.about center > p:nth-child(16) > a:nth-child(2) > img,
-.about center > p:nth-child(16) > a:nth-child(4) > img {
-    transition: 0.1s;
-}
-
-.about center > a:nth-child(1) > img:hover,
-.about center > a:nth-child(2) > img:hover,
-.about center > a:nth-child(3) > img:hover,
-.about center > a:nth-child(4) > img:hover {
-    transform: scale(0.94);
-    transition: var(--saiko-transition-fast);
-}
-.about center > p:nth-child(16) > a:nth-child(2) > img:hover,
-.about center > p:nth-child(16) > a:nth-child(4) > img:hover {
-    transform: scale(0.98);
-    transition: var(--saiko-transition-faster);
-}
+/* - Bio Favourites - */
 .favourite:hover {
-   transform: scale(1.1);
+   transform: scale(1.4);
    position: static;
    overflow: visible;
-   border: 3px solid rgb(var(--color-foreground));
+   border: 2px solid rgb(var(--color-foreground));
 }
 
 .favourites.preview .favourites-wrap .favourite, 
@@ -919,6 +854,29 @@ border-radius: 0 0 0 4px;
 .favourites-wrap[data-v-ddf96a3c] {
    overflow: visible;
 }
+
+/*--------------------------------------------------------- Overview > Favorite: character ---------------------------------------------------------*/
+
+/*Gintoki*/
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) { background-image: var(--gintoki-image) !important; transition: var(--transition-fast); }
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover { background-image: var(--gintoki-gif) !important; transition: var(--transition-normal); }
+
+/*Reinhard*/
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2) { background-image: var(--Reinhard-image) !important; transition: var(--transition-fast); }
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2):hover { background-image: var(--Reinhard-gif) !important; transition: var(--transition-normal); }
+
+/*Joe*/
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3) { background-image: var(--Joe-image) !important; transition: var(--transition-fast); }
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):hover { background-image: var(--Joe-gif) !important; transition: var(--transition-normal); }
+
+/*Takasugi*/
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4) { background-image: var(--Takasugi-image) !important; transition: var(--transition-fast); }
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):hover { background-image: var(--Takasugi-gif) !important; transition: var(--transition-normal); }
+
+/*Shiki*/
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5) { background-image: var(--Shiki-image) !important; transition: var(--transition-fast); }
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):hover { background-image: var(--Shiki-gif) !important; transition: var(--transition-normal);}
+
 
 /*--------------------------------------------------------- Animation studio ---------------------------------------------------------*/
 
@@ -1045,26 +1003,6 @@ Enhanced liked users overview*/
     border: 1px solid rgb(var(--Persona5-red));
 }
 
-/*Gintoki*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) { background-image: var(--gintoki-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover { background-image: var(--gintoki-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
-
-/*Reinhard*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2) { background-image: var(--Reinhard-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2):hover { background-image: var(--Reinhard-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
-
-/*Joe*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3) { background-image: var(--Joe-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):hover { background-image: var(--Joe-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
-
-/*Takasugi*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4) { background-image: var(--Takasugi-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):hover { background-image: var(--Takasugi-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
-
-/*Shiki*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5) { background-image: var(--Shiki-image) !important; transition: var(--saiko-transition-fast); }
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):hover { background-image: var(--Shiki-gif) !important; transition: var(--saiko-transition-normal); filter: brightness(1.5); }
-
 a.favourite.media.hohExtraFav {
     display: none;
 }
@@ -1083,38 +1021,7 @@ a.favourite.media.hohExtraFav {
     transform: translate(-24px, -36px) rotate(333deg);
 }
 
-/*Favorites Icons*/
-
-.favourites-wrap.staff > a:after {
-    font-family: 'Persona5';
-    transform: translate(22px, 70px);
-    display: flex;
-    width: 30px;
-    border-radius: 16px;
-    justify-content: center;
-    transition: opacity 0.2s ease-in-out;
-    opacity: 1;
-    padding-top: 6px;
-}
-
-.favourites-wrap.staff > a:hover:after {
-    opacity: 0 !important;
-    transition: 0.5s;
-}
-
-/*Autores*/
-.favourites-wrap.staff > a:nth-child(1)::after,
-.favourites-wrap.staff > a:nth-child(2)::after,
-.favourites-wrap.staff > a:nth-child(3)::after {
-    content: url(https://files.catbox.moe/rx7pg3.png);
-}
-/*Musicos*/
-.favourites-wrap.staff > a:nth-child(4)::after,
-.favourites-wrap.staff > a:nth-child(5)::after {
-    content: url(https://files.catbox.moe/i15jb7.png);
-}
-
-/*--------------------------------------------------------- Limit: Anime ---------------------------------------------------------*/
+/*--------------------------------------------------------- Overview > Favorite: Anime (Limit) ---------------------------------------------------------*/
 
 .content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(6),
 .content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(7),
@@ -1134,7 +1041,7 @@ a.favourite.media.hohExtraFav {
     Display: none;
 }
 
-/*--------------------------------------------------------- Limit: Manga ---------------------------------------------------------*/
+/*--------------------------------------------------------- Overview > Favorite: Manga (Limit) ---------------------------------------------------------*/
 
 .content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(6),
 .content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(7),
@@ -1154,7 +1061,7 @@ a.favourite.media.hohExtraFav {
     Display: none;
 }
 
-/*--------------------------------------------------------- Limit: Characters ---------------------------------------------------------*/
+/*--------------------------------------------------------- Overview > Favorite: Character (Limit) ---------------------------------------------------------*/
 
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(6),
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(7),
@@ -1174,113 +1081,30 @@ a.favourite.media.hohExtraFav {
     Display: none;
 }
 
-/*--------------------------------------------------------- Background ---------------------------------------------------------*/
+/*--------------------------------------------------------- Overview/Favorite > Staff: profile image ---------------------------------------------------------*/
 
-
-/*Gintoki*/div.favourites-wrap.characters > a:nth-child(1) {background-image: url(https://i.imgur.com/IYW1nUo.png) !important;}
-/*Reinhard*/div.favourites-wrap.characters > a:nth-child(2) {background-image: url(https://i.imgur.com/e0AXlHW.png) !important;}
-/*Joe*/div.favourites-wrap.characters > a:nth-child(3) {background-image: url(https://i.pinimg.com/236x/a9/8d/20/a98d20c2af0206c8cbdb9a71dd64fe90.jpg) !important;}
-/*Shinsuke Takasugi*/div.favourites-wrap.characters > a:nth-child(4) {background-image: url(https://i.imgur.com/IjJOcJ6.png) !important;}
-/*Shiki Ryougi*/div.favourites-wrap.characters > a:nth-child(5) {background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49ce2ff3-2d12-464c-bb60-7387f20d677e/dbd61vg-5015fcd3-ef86-4638-b77b-cc7177357649.jpg/v1/fit/w_300,h_800,q_70,strp/shiki_by_miura_n315_dbd61vg-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvNDljZTJmZjMtMmQxMi00NjRjLWJiNjAtNzM4N2YyMGQ2NzdlXC9kYmQ2MXZnLTUwMTVmY2QzLWVmODYtNDYzOC1iNzdiLWNjNzE3NzM1NzY0OS5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.rdM4BndunT8IjLQmBM3ADKrbL2B5TwIAT_AzA-_QVB8) !important;}
-/*Kyo Sohma*/div.favourites-wrap.characters > a:nth-child(6) {background-image: url(https://i.imgur.com/snK1glX.png) !important;}
-/*Phosphophyllite*/div.favourites-wrap.characters > a:nth-child(7) {background-image: url(https://i.imgur.com/9QrZ5dg.png) !important;}
-/*Jack Vessalius*/div.favourites-wrap.characters > a:nth-child(8) {background-image: url(https://i.imgur.com/647MG5y.png) !important;}
-/*Ginko*/div.favourites-wrap.characters > a:nth-child(9) {background-image: url(https://i.imgur.com/5prEbzR.png) !important;}
-/*Makise*/div.favourites-wrap.characters > a:nth-child(10) {background-image: url(https://i.imgur.com/Mta4Eij.png) !important;}
-/*Griffith*/div.favourites-wrap.characters > a:nth-child(11) {background-image: url(https://i.imgur.com/j0DwTkz.png) !important;}
-/*Rei Kiriyama*/div.favourites-wrap.characters > a:nth-child(12) {background-image: url(https://i.imgur.com/qM7SLgb.png) !important;}
-/*Ougi Oshino*/div.favourites-wrap.characters > a:nth-child(13) {background-image: url(https://i.imgur.com/HHbi4mb.png) !important;}
-/*Naoto*/div.favourites-wrap.characters > a:nth-child(14) {background-image: url(https://i.imgur.com/wxxdXhR.png) !important;}
-/*Johan*/div.favourites-wrap.characters > a:nth-child(15) {background-image: url(https://i.imgur.com/hNuaxnz.png) !important;}
-/*Miles*/div.favourites-wrap.characters > a:nth-child(16) {background-image: url(https://i.imgur.com/9A8imtj.png) !important;}
-
-/*--------------------------------------------------------- Background ---------------------------------------------------------*/
-
-#app 
-> div.wrap 
-> div {
-    background: var(--Joker-footer) no-repeat top/100% !important;
-    width: auto;
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+.favourites-wrap.staff > a:after {
+    transform: translate(22px, 70px);
+    display: flex;
+    width: 35px;
+    justify-content: center;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    padding-top: 6px;
 }
 
-
-
-/*--------------------------------------------------------- Animations ---------------------------------------------------------*/
-
-
-.activity-entry {
-    animation: zoomIn;
-    animation-duration: var(--saiko-animation-fast);
+.favourites-wrap.staff > a:hover:after {
+    opacity: 0 !important;
+    transition: 0.5s;
 }
 
-.overview,
-.input,
-.stats-wrap {
-    animation: fadeInRight;
-    animation-duration: var(--saiko-animation-fast);
+/* - Mangaka - */
+.favourites-wrap.staff > a:nth-child(1)::after, .favourites-wrap.staff > a:nth-child(2)::after, .favourites-wrap.staff > a:nth-child(3)::after {
+    content: url(https://files.catbox.moe/rx7pg3.png);
 }
-
-.page-content > div 
-> div.content.container > div
-> div:nth-child(1) {
-    animation: fadeInLeft;
-    animation-duration: var(--saiko-animation-fast);
-    animation-iteration-count: 1;
-}
-
-.about p:nth-child(16) > a:nth-child(2)::after {
-   animation: fadeInBottomLeft;
-   animation-duration: var(--saiko-animation-normal);
-}
-
-.reply {
-    animation: fadeInRight;
-    animation-duration: var(--saiko-animation-fast);
-}
-
-.header-wrap .actions .nav-btn:hover,
-.banner-content h1.name:hover,
-.header-wrap > div.banner > div.container > div > img:hover {
-    transform: scale(1.05);
-    transition: var(--saiko-transition-normal);
-}
-
-.actions>.nav-btn {Content: url(https://files.catbox.moe/oytnvc.png);cursor: pointer;position: absolute;z-index: 3;}
-
-.actions>.nav-btn {
-    padding: 0px;
-    bottom: -64px;
-    right: 20px;
-}
-
-.nav-btn[data-v-1cc2919e] {
-    Background: none;
-}
-
-.banner-content h1.name,
-.header-wrap > div.banner > div.container > div > img {
-    transition: var(--saiko-transition-normal);
-}
-
-.button.liked > svg {
-    animation: rubberBand;
-    animation-duration: var(--saiko-animation-normal);
-}
-
-.medialist.cards .entry-card {
-    animation: zoomIn;
-    animation-duration: var(--saiko-animation-normal);
-}
-
-.header-wrap > div.banner > div.container > div > img {
-animation: zoomIn;
-    animation-duration: var(--saiko-animation-normal);
-}
-
-.progress .bar {
-    animation: slideInLeft;
-    animation-duration: var(--saiko-transition-slow);
+/* - Music group - */
+.favourites-wrap.staff > a:nth-child(4)::after, .favourites-wrap.staff > a:nth-child(5)::after {
+    content: url(https://files.catbox.moe/i15jb7.png);
 }
 
 /*--------------------------------------------------------- Anime/Manga list ---------------------------------------------------------*/
@@ -1313,4 +1137,33 @@ div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(20) {
     content: url(https://files.catbox.moe/u53of0.png);
     height: 80px;
     margin-top: -20px;
+}
+
+/*--------------------------------------------------------- Favorite > Character: profile images ---------------------------------------------------------*/
+
+/*Gintoki*/div.favourites-wrap.characters > a:nth-child(1) {background-image: url(https://i.imgur.com/IYW1nUo.png) !important;}
+/*Reinhard*/div.favourites-wrap.characters > a:nth-child(2) {background-image: url(https://i.imgur.com/e0AXlHW.png) !important;}
+/*Joe*/div.favourites-wrap.characters > a:nth-child(3) {background-image: url(https://i.pinimg.com/236x/a9/8d/20/a98d20c2af0206c8cbdb9a71dd64fe90.jpg) !important;}
+/*Shinsuke Takasugi*/div.favourites-wrap.characters > a:nth-child(4) {background-image: url(https://i.imgur.com/IjJOcJ6.png) !important;}
+/*Shiki Ryougi*/div.favourites-wrap.characters > a:nth-child(5) {background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49ce2ff3-2d12-464c-bb60-7387f20d677e/dbd61vg-5015fcd3-ef86-4638-b77b-cc7177357649.jpg/v1/fit/w_300,h_800,q_70,strp/shiki_by_miura_n315_dbd61vg-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvNDljZTJmZjMtMmQxMi00NjRjLWJiNjAtNzM4N2YyMGQ2NzdlXC9kYmQ2MXZnLTUwMTVmY2QzLWVmODYtNDYzOC1iNzdiLWNjNzE3NzM1NzY0OS5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.rdM4BndunT8IjLQmBM3ADKrbL2B5TwIAT_AzA-_QVB8) !important;}
+/*Kyo Sohma*/div.favourites-wrap.characters > a:nth-child(6) {background-image: url(https://i.imgur.com/snK1glX.png) !important;}
+/*Phosphophyllite*/div.favourites-wrap.characters > a:nth-child(7) {background-image: url(https://i.imgur.com/9QrZ5dg.png) !important;}
+/*Jack Vessalius*/div.favourites-wrap.characters > a:nth-child(8) {background-image: url(https://i.imgur.com/647MG5y.png) !important;}
+/*Ginko*/div.favourites-wrap.characters > a:nth-child(9) {background-image: url(https://i.imgur.com/5prEbzR.png) !important;}
+/*Makise*/div.favourites-wrap.characters > a:nth-child(10) {background-image: url(https://i.imgur.com/Mta4Eij.png) !important;}
+/*Griffith*/div.favourites-wrap.characters > a:nth-child(11) {background-image: url(https://i.imgur.com/j0DwTkz.png) !important;}
+/*Rei Kiriyama*/div.favourites-wrap.characters > a:nth-child(12) {background-image: url(https://i.imgur.com/qM7SLgb.png) !important;}
+/*Ougi Oshino*/div.favourites-wrap.characters > a:nth-child(13) {background-image: url(https://i.imgur.com/HHbi4mb.png) !important;}
+/*Naoto*/div.favourites-wrap.characters > a:nth-child(14) {background-image: url(https://i.imgur.com/wxxdXhR.png) !important;}
+/*Johan*/div.favourites-wrap.characters > a:nth-child(15) {background-image: url(https://i.imgur.com/hNuaxnz.png) !important;}
+/*Miles*/div.favourites-wrap.characters > a:nth-child(16) {background-image: url(https://i.imgur.com/9A8imtj.png) !important;}
+
+/*--------------------------------------------------------- Footer ---------------------------------------------------------*/
+
+#app 
+> div.wrap 
+> div {
+    background: var(--Joker-footer) no-repeat top/100% !important;
+    width: auto;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
 }
