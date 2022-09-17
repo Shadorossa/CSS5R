@@ -23,15 +23,12 @@ Fonts & Animations*/
     
     /*Customize image*/
     --P5-background: url(https://files.catbox.moe/fkpnwt.png);
-    --saiko-cursor: url(https://files.catbox.moe/4zfy4j.png);
-    ;--Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png);;
-    ;--Joker-pfp2: url(https://files.catbox.moe/leizk1.png);;
+    --P5-cursor: url(https://files.catbox.moe/4zfy4j.png);
+    --Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png);;
+    --Joker-pfp2: url(https://files.catbox.moe/leizk1.png);;
     --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
-    
-    /*Added Icons feature*/
-    --saiko-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
-    --saiko-anime-icon: url(https://files.catbox.moe/d19tiw.svg);
-    --saiko-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
+    --P5-anime-icon: url(https://files.catbox.moe/d19tiw.svg);
+    --P5-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
     
     /*Favorite characters*/
     --gintoki-image: url(https://i.imgur.com/HRuIQHE.png); --gintoki-gif: url(https://files.catbox.moe/eebtvl.gif);
@@ -100,9 +97,9 @@ body,
 
 
 body {
-    cursor: var(--saiko-cursor), auto;
+    cursor: var(--P5-cursor), auto;
     overflow: overlay;
-    background: rgb(var(--color-background)) var(--saiko-background) center/100% fixed;
+    background: rgb(var(--color-background)) var(--P5-Wallpaper) center/100% fixed;
     font-family: 'Persona5', Overpass, sans-serif;
 }
 
