@@ -11,18 +11,72 @@ Credits to the original structure: @SaikoKurami */
 
 /*--------------------------------------------------------- Base ---------------------------------------------------------*/
 
+:root, 
+body, 
+.site-theme-dark, 
+.site-theme-contrast {
+    --color-background: 11,22,34 !important;
+    --color-foreground: 28,28,29 !important;
+    --color-foreground-grey: 28,28,28 !important;
+    --color-foreground-grey-dark: 10,5,10 !important;
+    --color-foreground-blue: 15,22,31 !important;
+    --color-foreground-blue-dark: 6,12,19 !important;
+    --color-text: 159,173,189 !important;
+    --color-text-light: 114,138,161 !important;
+    --color-text-lighter: 133,150,165 !important;
+    --color-shadow-blue: 0,5,15 !important;
+    --color-background-1200: 251,251,251!important;
+    --color-background-1100: 240,243,246 !important;
+    --color-background-1000: 221,230,238 !important;
+    --color-background-900: 201,215,227!important;
+    --color-background-800: 173,192,210 !important;
+    --color-background-700: 139,160,178 !important;
+    --color-background-600: 116,136,153 !important;
+    --color-background-500: 100,115,128 !important;
+    --color-background-400: 81,97,112 !important;
+    --color-background-300: 30,42,56 !important;
+    --color-background-100: 21,31,46 !important;
+    --color-background-200: 11,22,34 !important;
+    --color-text-bright: 255, 255, 255 !important;
+    --color-blue: 120, 180, 255 !important;
+    --color-foreground-alt: 18, 23, 29 !important;
+    --color-nav-hoh: rgb(20, 25, 31) !important;
+    --color-blue-100: 247, 250, 252 !important;
+    --color-blue-200: 236, 246, 254 !important;
+    --color-blue-300: 201, 232, 255 !important;
+    --color-blue-400: 143, 215, 255 !important;
+    --color-blue-500: 111, 200, 255 !important;
+    --color-blue-600: 61, 180, 242 !important;
+    --color-blue-700: 8, 143, 214 !important;
+    --color-blue-800: 12, 101, 166 !important;
+    --color-blue-900: 11, 70, 113 !important;
+    --color-blue-1000: 16, 61, 85 !important;
+    --color-gray-1200: 251,251,251 !important;
+    --color-gray-1100: 240,243,246 !important;
+    --color-gray-1000: 221,230,238 !important;
+    --color-gray-900: 201,215,227 !important;
+    --color-gray-800: 173,192,210 !important;
+    --color-gray-700: 139,160,178 !important;
+    --color-gray-600: 116,136,153 !important;
+    --color-gray-500: 100,115,128 !important;
+    --color-gray-400: 81,97,112 !important;
+    --color-gray-300: 30,42,56 !important;
+    --color-gray-100: 21,31,46 !important;
+    --color-gray-200: 11,22,34 !important;
+}
+
 :root {
     /*Color Scheme*/
     --Persona5-red: 209, 0, 3;
     --Persona5-gold: 249, 189, 4;
-    --Persona5-black: 255, 255, 255;
+    --Persona5-black: 0, 0, 0;
     --Persona5-white: 255,255,255;
     --saiko-light-gray: 65, 81, 100;
     --saiko-dark-gray: 40, 56, 77;
     --saiko-white: 255, 255, 255;
     --saiko-dirty-white: 219, 219, 219;
     --saiko-transparent: rgb(0 0 0 / 0%);
-    --saiko-border: 39, 46, 54;
+    --saiko-border: 244,244,244;
 
     /* - Persona 5 Royal assets - */
     --P5-Wallpaper: url(https://files.catbox.moe/fkpnwt.png); --P5-cursor: url(https://files.catbox.moe/4zfy4j.png); --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
@@ -38,8 +92,17 @@ Credits to the original structure: @SaikoKurami */
     --Joe-image: url(https://i.pinimg.com/550x/93/71/f6/9371f646bff2d26360c8d9c42f6263cf.jpg); --Joe-gif: url(https://c.tenor.com/0__k92cmME4AAAAC/drink-thirsty.gif);
     --Takasugi-image: url(https://s4.anilist.co/file/anilistcdn/character/large/b2948-Er1xnL05k1oU.png); --Takasugi-gif: url(https://c.tenor.com/rDF2WZXh_xYAAAAC/takasugi-shinsuke-takasugi.gif);
     --Shiki-image: url(https://files.catbox.moe/oegd4i.png); --Shiki-gif: url(https://c.tenor.com/Ec4hso3hz6EAAAAC/shiki-ryougi.gif);
-    
-    /*Preferences*/
+
+    /* - Character details - */
+    --joker-mask: url(https://files.catbox.moe/rcvksy.png); 
+    --joker-confident: url(-confident);
+    --akechi-confident: url(https://i.imgur.com/npSQYaJ.png);
+    --kasumi-confident: url(https://i.imgur.com/wzTxQXF.png);
+    --makoto-confident: url(https://i.imgur.com/LbyKNJ1.png);
+    --maruki-confident: url(https://i.imgur.com/rhRhbYi.png);
+
+
+    /* - Animations and transitions - */
     --animation-slow: 1.5s;
     --animation-normal: 1s;
     --animation-fast: 0.5s;
@@ -48,46 +111,6 @@ Credits to the original structure: @SaikoKurami */
     --transition-fast: 0.5s;
     --transition-faster: 0.2s;
     --transition-ultra-faster: 0.04s;
-}
-
-:root, 
-body, 
-.site-theme-dark, 
-.site-theme-contrast {
-    --color-background: 11,22,34 !important;
-    --color-foreground: 28,28,29 !important;
-    --color-foreground-grey: 15,22,31 !important;
-    --color-foreground-grey-dark: 10,5,10 !important;
-    --color-foreground-blue: 15,22,31 !important;
-    --color-foreground-blue-dark: 6,12,19 !important;
-    --color-text: 159,173,189 !important;
-    --color-text-light: 114,138,161 !important;
-    --color-text-lighter: 133,150,165!important;
-    --color-shadow-blue: 0,5,15!important;
-    --color-background-1200: 251,251,251!important;
-    --color-background-1100: 240,243,246 !important;
-    --color-background-1000: 221,230,238 !important;
-    --color-background-900: 201,215,227!important;
-    --color-background-800: 173,192,210 !important;
-    --color-background-700: 139,160,178 !important;
-    --color-background-600: 116,136,153 !important;
-    --color-background-500: 100,115,128 !important;
-    --color-background-400: 81,97,112 !important;
-    --color-background-300: 30,42,56 !important;
-    --color-background-100: 21,31,46 !important;
-    --color-background-200: 11,22,34 !important;
-    --color-gray-1200: 251,251,251 !important;
-    --color-gray-1100: 240,243,246 !important;
-    --color-gray-1000: 221,230,238 !important;
-    --color-gray-900: 201,215,227 !important;
-    --color-gray-800: 173,192,210 !important;
-    --color-gray-700: 139,160,178 !important;
-    --color-gray-600: 116,136,153 !important;
-    --color-gray-500: 100,115,128 !important;
-    --color-gray-400: 81,97,112 !important;
-    --color-gray-300: 30,42,56 !important;
-    --color-gray-100: 21,31,46 !important;
-    --color-gray-200: 11,22,34 !important;
 }
 
 /*--------------------------------------------------------- Form ---------------------------------------------------------*/
@@ -175,7 +198,7 @@ display: none !important;
 
 .nav .wrap .links {
     grid-column-start: 3;
-    margin-left: -25px;
+    margin-left: -105px;
 }
 
 .nav .wrap .search {
@@ -196,7 +219,7 @@ display: none !important;
 }
 
 .nav .wrap .search:hover {
-    border: 3px solid rgba(var(--saiko-border));
+    border: 2px solid rgba(var(--saiko-border));
     padding: 7px;
     transition: var(--transition-faster);
 }
@@ -216,23 +239,15 @@ display: none !important;
 }
 
 /* - Navegation: Categories - */
-.logo[data-v-62eacfff], .user[data-v-62eacfff] {
-  Left: -60px;
-}
-.links>.link:nth-of-type(3) {
-  Display:none
-}
-.links>.link:nth-of-type(4) {
-  Display:none
-}
-.links>.link:nth-of-type(5) {
-  Display:none
-}
+.logo[data-v-62eacfff], .user[data-v-62eacfff] {Left: -60px;}
+.links>.link:nth-of-type(3) {Display:none}
+.links>.link:nth-of-type(4) {Display:none}
+.links>.link:nth-of-type(5) {Display:none}
 
 /*--------------------------------------------------------- Banner: header ---------------------------------------------------------*/
 
 
-/*profile avatar*/
+/* - Header: avatar - */
 .banner-content > .avatar {
     padding: 147px 150px;
     background: var(--Joker-pfp1);
@@ -266,24 +281,8 @@ img {
     border-style: none;
 }
 
-.page-content
-> div 
-> div.header-wrap
-> div.banner
-> div.container 
-> div 
-> img {
-    content: var(--saiko-avatar);
-}
-
-.banner[data-v-1cc2919e] {
-    height: 430px;
-}
-
-/* Removed Banner Shadow */
-.banner .shadow {
-display: none;
-}
+/* - Header: banner - */
+.banner[data-v-1cc2919e] {height: 430px;}
 
 .header-wrap 
 > div.banner 
@@ -328,7 +327,6 @@ display: none;
 }
 
 .header-wrap .nav-wrap {
-    /* background: none; */
     bottom: 795px;
     left: 788px;
     position: absolute;
@@ -352,7 +350,7 @@ display: none;
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) {}
 
 .header-wrap .nav-wrap .nav .link:nth-child(1) {content: url(https://files.catbox.moe/y6u92z.png);;
-    ;;;/* display: flex; */;;;height: 80px;;;;;;;;;;;;;;;
+    /* display: flex; */ height: 80px;
     }
 
 .header-wrap .nav-wrap .nav .link:hover {
@@ -406,10 +404,6 @@ display: none;
     position: absolute;
     bottom: -360px;
     left: -80px;
-}
-.header-wrap .nav-wrap .nav .link.router-link-active {
-    /* border-bottom: 3px solid rgb(var(--Persona5-red)); */
-    /* color: rgb(var(--saiko-dirty-white)); */
 }
 
 .mod-badge-wrap.follower-badge {
@@ -980,51 +974,6 @@ body .overview .favourite.studio, .site-theme-contrast .overview .favourite.stud
     transition: var(--transition-normal);
 }
 
-/*--------------------------------------------------------- Features ---------------------------------------------------------*/
-
-
-Enhanced liked users overview*/
-.action.likes:hover .action.likes .users {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: flex-end;
-    transition: 0.3s;
-}
-.action.likes .users {
-    animation: fadeInRight;
-    animation-duration: var(--animation-fast);
-    transition: var(--transition-fast);
-    background: none !important;
-}
-.action.likes .users > a {
-    border-radius: 50%;
-    filter: saturate(0.3);
-}
-.action.likes .users > a:hover {
-    filter: hue-rotate(340deg);
-    transition: 0.3s;
-    transform: scale(0.91);
-    border: 1px solid rgb(var(--Persona5-red));
-}
-
-a.favourite.media.hohExtraFav {
-    display: none;
-}
-
-/* Phantom Thieves mask */
-.content.container
-> div 
-> div:nth-child(1) 
-> div:nth-child(6) 
-> div 
-> a:nth-child(1):after {
-    content: url(https://files.catbox.moe/rcvksy.png);
-    position: absolute;
-    padding: 24px 0px;
-    overflow: overlay;
-    transform: translate(-24px, -36px) rotate(333deg);
-}
-
 /*--------------------------------------------------------- Overview > Favorite: Anime (Limit) ---------------------------------------------------------*/
 
 .content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(6),
@@ -1042,8 +991,7 @@ a.favourite.media.hohExtraFav {
 .content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(18),
 .content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(19),
 .content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(20) { 
-    Display: none;
-}
+    Display: none;}
 
 /*--------------------------------------------------------- Overview > Favorite: Manga (Limit) ---------------------------------------------------------*/
 
@@ -1062,8 +1010,7 @@ a.favourite.media.hohExtraFav {
 .content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(18),
 .content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(19),
 .content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(20) { 
-    Display: none;
-}
+    Display: none;}
 
 /*--------------------------------------------------------- Overview > Favorite: Character (Limit) ---------------------------------------------------------*/
 
@@ -1082,8 +1029,7 @@ a.favourite.media.hohExtraFav {
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(18),
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(19),
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(20) { 
-    Display: none;
-}
+    Display: none;}
 
 /*--------------------------------------------------------- Overview/Favorite > Staff: profile image ---------------------------------------------------------*/
 
@@ -1111,7 +1057,7 @@ a.favourite.media.hohExtraFav {
     content: url(https://files.catbox.moe/i15jb7.png);
 }
 
-/*--------------------------------------------------------- Anime/Manga list ---------------------------------------------------------*/
+/*--------------------------------------------------------- Anime List/Manga List: categories ---------------------------------------------------------*/
 
 .filter-group .active[data-v-170179fc] {
     background: none;
@@ -1161,6 +1107,13 @@ div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(20) {
 /*Naoto*/div.favourites-wrap.characters > a:nth-child(14) {background-image: url(https://i.imgur.com/wxxdXhR.png) !important;}
 /*Johan*/div.favourites-wrap.characters > a:nth-child(15) {background-image: url(https://i.imgur.com/hNuaxnz.png) !important;}
 /*Miles*/div.favourites-wrap.characters > a:nth-child(16) {background-image: url(https://i.imgur.com/9A8imtj.png) !important;}
+
+/* - Phantom Thieves masks - */
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):after {content: var(--joker-mask); position: absolute; overflow: overlay;transform: translate(-25px, -14px) rotate(320deg);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2):after {content: var(--kasumi-confident); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):after {content: var(--akechi-confident); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):after {content: var(--makoto-confident); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):after {content: var(--maruki-confident); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
 
 /*--------------------------------------------------------- Footer ---------------------------------------------------------*/
 
