@@ -22,13 +22,10 @@ Fonts & Animations*/
     --saiko-border: 39, 46, 54;
     
     /*Customize image*/
-    --P5-background: url(https://files.catbox.moe/fkpnwt.png);
-    --P5-cursor: url(https://files.catbox.moe/4zfy4j.png);
-    --Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png);;
-    --Joker-pfp2: url(https://files.catbox.moe/leizk1.png);;
-    --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
-    --P5-anime-icon: url(https://files.catbox.moe/d19tiw.svg);
-    --P5-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
+    --P5-Wallpaper: url(https://files.catbox.moe/fkpnwt.png); --P5-cursor: url(https://files.catbox.moe/4zfy4j.png); --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
+    --Joker-pfp1: url(https://files.catbox.moe/0dfzm3.png); --Joker-pfp2: url(https://files.catbox.moe/leizk1.png);
+    --P5-anime-icon: url(https://files.catbox.moe/d19tiw.svg); --P5-manga-icon: url(https://files.catbox.moe/drs6hx.svg);
+
     
     /*Favorite characters*/
     --gintoki-image: url(https://i.imgur.com/HRuIQHE.png); --gintoki-gif: url(https://files.catbox.moe/eebtvl.gif);
@@ -1321,7 +1318,7 @@ a.favourite.media.hohExtraFav {
 /*Ougi Oshino*/div.favourites-wrap.characters > a:nth-child(13) {background-image: url(https://i.imgur.com/HHbi4mb.png) !important;}
 /*Naoto*/div.favourites-wrap.characters > a:nth-child(14) {background-image: url(https://i.imgur.com/wxxdXhR.png) !important;}
 /*Johan*/div.favourites-wrap.characters > a:nth-child(15) {background-image: url(https://i.imgur.com/hNuaxnz.png) !important;}
-/*Naoto*/div.favourites-wrap.characters > a:nth-child(16) {background-image: url(https://i.imgur.com/9A8imtj.png) !important;}
+/*Miles*/div.favourites-wrap.characters > a:nth-child(16) {background-image: url(https://i.imgur.com/9A8imtj.png) !important;}
 
 /*--------------------------------------------------------- Background ---------------------------------------------------------*/
 
