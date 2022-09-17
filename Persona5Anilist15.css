@@ -668,73 +668,6 @@ Activity Title-overflow fixed !(*￣(￣　*)
   }
 }
 
-/*
-Hide Guild feature on 1280px screen (๑•̀ㅂ•́)و✧
-*/
-@media (max-width: 1280px) {
-    .about a:nth-child(17)::after,
-    .about a:nth-child(17)::before {
-        width: 0 !important;
-    }
-}
-
-/*        
-.activity-anime_list .wrap:hover .list.small 
-> div
-> div.status 
-> a ,
-.activity-manga_list .wrap:hover 
-.list.small 
-> div 
-> div.status 
-> a {
-    white-space: normal;
-}
-*/
-
-.full-width.activity-anime_list 
-> .wrap 
-> .list.small 
-> div 
-> div.status 
-> a,
-.full-width.activity-manga_list 
-> .wrap > .list.small 
-> div 
-> div.status 
-> a {
-    width: 600px;
-}
-
-/*
-Activity Users Profile ヽ(￣ω￣(￣ω￣〃)ゝ
-*/
-a[href="/user/SaikoKurami/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
-    content: '';
-    -webkit-mask: var(--saiko-owner-icon) no-repeat 50% 50%;
-    -webkit-mask-size: auto;
-    position: inherit;
-    padding: 10px 8px;
-    background-color: rgb(var(--saiko-gray));
-    margin-left: 8px;
-}
-
-.text 
-> .header
-> .name::after, .reply 
-> .header
-> .name::after {
-    content: '';
-    mask: var(--saiko-friends-icon) no-repeat 50% 50%;
-    -webkit-mask: var(--saiko-friends-icon) no-repeat 50% 50%;
-    mask-size: cover;
-    -webkit-mask-size: auto;
-    position: inherit;
-    padding: 10px 8px;
-    background-color: rgb(var(--saiko-gray));
-    margin-left: 8px;
-}
-
 .activity-message > .wrap > .time, .activity-text > .wrap > .time {
     left: 72px;
     top: 43px;
@@ -756,59 +689,6 @@ a[href="/user/SaikoKurami/"]:not(.avatar):not(.user):not(.link):not(.primary-lin
     vertical-align: top;
 }
 
-.text .donator-badge {
-    color: rgb(var(--saiko-cyan));
-    background: none !important;
-    display: block;
-    overflow: hidden;
-    right: 18px;
-    top: 16px !important;
-    position: absolute !important;
-}
-.donator-badge.rainbow {
-    display: none !important;
-}
-.mod-badge {
-    margin-top: 1px;
-    margin-right: 42px;
-}
-.mod-badge svg {
-    margin-top: -5px !important;
-    margin-right: 2px !important;
-}
-.mod-badge-wrap.donator-badge {
-    background: none !important;
-    color: rgb(var(--saiko-cyan));
-}
-.markdown blockquote {
-    border-left: solid 7px rgb(var(--saiko-cyan));
-}
-
-/*
- Change name spacing and color 
-*/
-a[href="/user/Shadorossa/"]:not(.avatar):not(.user):not(.link):not(.primary-link) {
-    color: rgb(var(--Persona5-red));
-    letter-spacing: 0.03em;
-}
-
-.activity-feed 
-> div
-> div.wrap 
-> div.text 
-> div.header 
-> a.avatar,
-.activity-entry.preview.activity-text
-> div
-> div.text 
-> div.header
-> a.avatar,
-.wrap > div.user > div > div.avatar,
-.reply .avatar {
-background-color: rgb(var(--color-foreground-grey));
-    border-radius: 50px;
-}
-
 /*Spoiler*/
 .markdown .markdown-spoiler:before {
     color: rgb(var(--color-background));
@@ -824,14 +704,7 @@ background-color: rgb(var(--color-foreground-grey));
     font-size: 1rem;
 }
 
-/*load-more*/
-.load-more {
-    align-items: center;
-}
-.scroller:hover .load-more {
-    color: rgb(var(--Persona5-red));
-    transition: var(--saiko-transition-normal);
-}
+/* - Load more - */
 .load-more[data-v-6f203cf2] {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://i.pinimg.com/originals/4a/ea/f2/4aeaf254f6efa503db1e8d3e9c31cabf.gif) center/100%;
 }
@@ -944,24 +817,24 @@ border-radius: 0 0 0 4px;
 
 .section > .stats-wrap > .list-stats:nth-child(1) .stat:nth-child(1) .value:before {
     content: '';
-    -webkit-mask: var(--saiko-anime-icon) no-repeat 50% 50%;
+    -webkit-mask: var(--P5-anime-icon) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     width: 30px;
     height: 30px;
     position: absolute;
     right: -10%;
-    background-color: rgba(var(--P5-mask));
+    background-color: rgba(var(--Persona5-red));
 }
 
 .section > .stats-wrap > .list-stats:nth-child(2) .stat:nth-child(1) .value:before {
     content: '';
-    -webkit-mask: var(--saiko-manga-icon) no-repeat 50% 50%;
+    -webkit-mask: var(--P5-manga-icon) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     width: 30px;
     height: 30px;
     position: absolute;
     right: -10%;
-    background-color: rgba(var(--P5-mask));
+    background-color: rgba(var(--Persona5-red));
 }
 
 /*Anime list and manga list cover bugfixed*/
