@@ -214,14 +214,17 @@ display: none !important;
     width: 45px;
 }
 
+/* - Navegation: Categories - */
 .logo[data-v-62eacfff], .user[data-v-62eacfff] {
-  Display:none
+  Left: -60px;
 }
-
 .links>.link:nth-of-type(3) {
   Display:none
 }
 .links>.link:nth-of-type(4) {
+  Display:none
+}
+.links>.link:nth-of-type(5) {
   Display:none
 }
 
