@@ -551,6 +551,7 @@ img {
 
 .wrap[data-v-04d66030] {
     position: absolute;
+    overflow: hidden;
     /* max-width: 160px; */
     /* max-height: 75px; */
 }
