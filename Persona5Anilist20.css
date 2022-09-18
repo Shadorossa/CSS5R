@@ -112,14 +112,11 @@ body,
     --transition-ultra-faster: 0.04s;
 }
 
-/*--------------------------------------------------------- Form ---------------------------------------------------------*/
+/*--------------------------------------------------------- Page's body ---------------------------------------------------------*/
 
 .activity-entry .cover, .activity-entry .wrap, .activity-entry.activity-text .wrap, .activity-feed .activity-replies .reply, .activity-message .wrap, .content.container>div>div:nth-child(1)>div:nth-child(2)>div, .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1), .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2), .el-input, .el-textarea, .el-textarea__inner, .embed, .favourites-wrap.anime, .favourites-wrap.characters, .favourites-wrap.staff, .favourites-wrap.studios, .hohPinned .wrap, .input, .input[data-v-93c5960c], .markdown-editor, .medialist.cards .entry-card .cover .image, .medialist.table .list-section, .scroller .load-more, .section>.about .content-wrap, .user-follow .follow-card, .user-social .wrap {
     border-radius: 16px !important;
 }
-
-/*--------------------------------------------------------- Body ---------------------------------------------------------*/
-
 
 body {
     cursor: var(--P5-cursor), auto;
@@ -130,58 +127,23 @@ body {
 .content.container {
     background: rgba(0, 0, 0, 0.5);
     max-width: 80%;
-    padding: 30px 30px;
+    padding: 10px 30px;
     border-radius: 0 0 15px 15px;
-    box-shadow: var(--nutella-bs);
+    backdrop-filter: blur(4px) !important;
 }
 
-/*Scroll bar*/
-::-webkit-scrollbar {
-    width: 4px;
-    background: rgb(var(--saiko-transparent));
-}
-
-::-webkit-scrollbar-corner {
-    background: rgb(var(--Persona5-red));
-}
-
+/* - Scroll bar - */
 ::-webkit-scrollbar-thumb {
     background: rgb(var(--Persona5-red));
     -webkit-border-radius: 1ex;
 }
 
-/*Fixed bio scrollbar*/
+/* - Ilimited bio view - */
 .about .content-wrap::-webkit-scrollbar {
 display: none !important;
 }
-    
-.text .markdown::-webkit-scrollbar {
-    width: 2px !important;
-    background: rgb(var(--saiko-transparent));
-}
 
-.text .markdown {
-    margin-right: 6px;
-    margin-left: 8px;
-    margin-bottom: 20px !important;
- }
-
-.page-content
-> div 
-> div.content.container
-> div
-> div:nth-child(1)
-> h2 {
-    margin-top: 30px;
-}
-
-/*--------------------------------------------------------- Navigation ---------------------------------------------------------*/
-
-.nav {
-    background: none;
-    color: rgb(var(--saiko-dirty-white)) !important;
-    font-family: 'Persona5Menu'
-}
+/*--------------------------------------------------------- Header: navegation ---------------------------------------------------------*/
 
 #nav {
     position: absolute;
@@ -351,7 +313,7 @@ img {
 }
 
 .header-wrap .nav-wrap .nav .link:nth-child(1) {content: url(https://files.catbox.moe/y6u92z.png);;
-    /* display: flex; */ height: 80px;
+    height: 80px;
 }
 
 .header-wrap .nav-wrap .nav .link:hover {
@@ -431,7 +393,7 @@ img {
   z-index: 5;
 } 
 
-/*--------------------------------------------------------- Overview ---------------------------------------------------------*/
+/*--------------------------------------------------------- Category: overview ---------------------------------------------------------*/
    
 
 .time .action.active {
@@ -446,9 +408,9 @@ img {
 
 .section>.stats-wrap .stat .value {
     color: rgb(var(--Persona5-red));
-    font-size: 3rem;
-    font-weight: 700;
-    padding-bottom: 8px;
+    font-size: 2.5rem;
+    font-family: 'Persona5';
+    padding-bottom: 0px;
     filter: opacity(0);
 }
 
@@ -555,12 +517,15 @@ img {
     margin-bottom: 30px;
 }
 
-/* - Activity Title-overflow fixed - */
+/* - Joker pfp fix - */
+div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.activity-text > div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active {
+    background: none;
+    content: url(https://files.catbox.moe/82z26q.png);
+}
+
+/* - Activity fix - */
 @media (min-width: 1540px) {
-.list.small 
-    > div
-    > div.status
-    > a {
+.list.small > div > div.status > a {
     white-space: nowrap;
     width: 250px;
     overflow: hidden;
@@ -582,8 +547,8 @@ img {
 
 .text > div.header > a.name {
     display: inline-block;
-    font-size: 17px;
-    line-height: 50px;
+    font-size: 16px;
+    line-height: 54px;
 
 }
 
@@ -771,27 +736,27 @@ border-radius: 0 0 0 4px;
 
 /*--------------------------------------------------------- Overview > Favorite: character (Gid + image + confident) ---------------------------------------------------------*/
 
-/*Gintoki*/
+/*Gintoki + Confidant*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) { background-image: var(--gintoki-image) !important; transition: var(--transition-fast);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover { background-image: var(--gintoki-gif) !important; transition: var(--transition-normal);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):after {content: var(--joker-confidant); position: absolute; overflow: overlay;transform: translate(42px, -36px);}
 
-/*Reinhard*/
+/*Reinhard + Confidant*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2) { background-image: var(--Reinhard-image) !important; transition: var(--transition-fast);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2):hover { background-image: var(--Reinhard-gif) !important; transition: var(--transition-normal);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2):after {content: var(--kasumi-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
 
-/*Joe*/
+/*Joe + Confidant*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3) { background-image: var(--Joe-image) !important; transition: var(--transition-fast); }
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):hover { background-image: var(--Joe-gif) !important; transition: var(--transition-normal);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):after {content: var(--akechi-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
 
-/*Takasugi*/
+/*Takasugi + Confidant*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4) { background-image: var(--Takasugi-image) !important; transition: var(--transition-fast);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):hover { background-image: var(--Takasugi-gif) !important; transition: var(--transition-normal);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):after {content: var(--makoto-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
 
-/*Shiki*/
+/*Shiki + Confidant*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5) { background-image: var(--Shiki-image) !important; transition: var(--transition-fast);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):hover { background-image: var(--Shiki-gif) !important; transition: var(--transition-normal);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):after {content: var(--maruki-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
@@ -1039,3 +1004,8 @@ div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(20) {
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.activity-text > div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active {
+    background: none;
+    content: url(https://files.catbox.moe/82z26q.png);
+}
