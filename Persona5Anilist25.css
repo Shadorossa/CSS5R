@@ -609,26 +609,18 @@ div.page-content > div > div.content.container > div > div:nth-child(2) > div.ac
     background: none;
     content: url(https://files.catbox.moe/82z26q.png);
 }
-/* - Activity fix - */
-/*@media (min-width: 1540px) {
-.list.small > div > div.status > a {
-    white-space: nowrap;
-    width: 250px;
-    overflow: hidden;
-    display: block;
-    text-overflow: ellipsis;
-  }
-}*/
 
 .activity-message > .wrap > .time, .activity-text > .wrap > .time {
-    left: 72px;
-    top: 14px;
+
+    left: 16px;
+    top: 52px;
     display: flex;
     font: 'Persona5';
     font-size: 9px;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
+    opacity: 1;
 }
 
 .text > div.header > a.name {
