@@ -517,9 +517,6 @@ img {
 
 .time .action.active {
     Display: none;
-/*  color: rgba(var(--Persona5-red)) !important;
-    animation: swing;
-    animation-duration: var(--animation-normal);*/
 }
 
 .actions[data-v-04d66030], .details .status  {
@@ -552,8 +549,6 @@ img {
 .wrap[data-v-04d66030] {
     position: absolute;
     overflow: hidden;
-    /* max-width: 160px; */
-    /* max-height: 75px; */
 }
 
 .text .donator-badge[data-v-04d66030]{
@@ -592,24 +587,13 @@ img {
 }
 .activity-entry .wrap:hover .list.small .cover {filter: blur(8px)}
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* - Joker pfp fix - */
 div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.activity-text > div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active {
     background: none;
     content: url(https://files.catbox.moe/82z26q.png);
 }
 
+/* - Status date fix - */
 .activity-message > .wrap > .time, .activity-text > .wrap > .time {
 
     left: 16px;
@@ -633,7 +617,6 @@ div.page-content > div > div.content.container > div > div:nth-child(2) > div.ac
 .load-more[data-v-6f203cf2] {
     position: relative;
     bottom: -60px;
-    
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://i.pinimg.com/originals/4a/ea/f2/4aeaf254f6efa503db1e8d3e9c31cabf.gif) center/100%;
 }
 
@@ -1027,7 +1010,6 @@ body .overview .favourite.studio, .site-theme-contrast .overview .favourite.stud
 .filter-group .active[data-v-170179fc] {
     background: none;
 }
-
 div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(3) {
     content: url(https://files.catbox.moe/p6hg6d.png);
     height: 80px;
