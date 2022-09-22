@@ -66,17 +66,11 @@ body,
 }
 
 :root {
-    /*Color Scheme*/
+    /*Persona5 color palette*/
     --Persona5-red: 209, 0, 3;
     --Persona5-gold: 249, 189, 4;
     --Persona5-black: 0, 0, 0;
     --Persona5-white: 255,255,255;
-    --saiko-light-gray: 65, 81, 100;
-    --saiko-dark-gray: 40, 56, 77;
-    --saiko-white: 255, 255, 255;
-    --saiko-dirty-white: 219, 219, 219;
-    --saiko-transparent: rgb(0 0 0 / 0%);
-    --saiko-border: 244,244,244;
 
     /* - Persona 5 Royal assets - */
     --P5-Wallpaper: url(https://files.catbox.moe/fkpnwt.png); --P5-cursor: url(https://files.catbox.moe/4zfy4j.png); --Joker-footer: url(https://thumbs.gfycat.com/FaroffVagueDiplodocus-max-1mb.gif);
@@ -114,7 +108,7 @@ body,
 
 /*--------------------------------------------------------- Page's body ---------------------------------------------------------*/
 
-.activity-entry .cover, .activity-entry .wrap, .activity-entry.activity-text .wrap, .activity-feed .activity-replies .reply, .activity-message .wrap, .content.container>div>div:nth-child(1)>div:nth-child(2)>div, .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1), .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2), .el-input, .el-textarea, .el-textarea__inner, .embed, .favourites-wrap.anime, .favourites-wrap.characters, .favourites-wrap.staff, .favourites-wrap.studios, .hohPinned .wrap, .input, .input[data-v-93c5960c], .markdown-editor, .medialist.cards .entry-card .cover .image, .medialist.table .list-section, .scroller .load-more, .section>.about .content-wrap, .user-follow .follow-card, .user-social .wrap {
+.activity-entry .cover, .activity-entry .wrap, .activity-entry.activity-text .wrap, .activity-feed .activity-replies .reply, .activity-message .wrap, .content.container>div>div:nth-child(1)>div:nth-child(2)>div, .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1), .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(2), .el-input, .el-textarea, .el-textarea__inner, .embed, .favourites-wrap.anime, .favourites-wrap.characters, .favourites-wrap.staff, .favourites-wrap.studios, .hohPinned .wrap, .input, .input[data-v-93c5960c], .markdown-editor, .medialist.table .list-section, .scroller .load-more, .section>.about .content-wrap, .user-follow .follow-card, .user-social .wrap {
     border-radius: 16px !important;
 }
 
@@ -395,6 +389,7 @@ img {
 
 /*--------------------------------------------------------- Category: overview ---------------------------------------------------------*/
 
+/* - Stats - */
 .stats-wrap {
   transform: scale(1) !important;
 }
@@ -492,10 +487,13 @@ img {
 }
 
 /* - Activity config - */
-
-.list.small .entry-dropdown[data-v-04d66030]{
-    Display: none;
-}
+.list.small .entry-dropdown[data-v-04d66030]{Display: none;}
+.list.small .details[data-v-b584a8de]{position: absolute;}
+.list.small[data-v-04d66030]{grid-template-columns: 120px auto;}
+.list.small[data-v-b584a8de] {grid-template-columns: 120px auto;}
+.list.small > div > div.status > a {display: none;}
+.list .title[data-v-04d66030]{display: none;}
+.time .action.active {Display: none;}
 
 @media (min-width: 1540px) {
 .activity-feed .activity-message[data-v-eb51fd0e], .activity-feed .activity-text[data-v-eb51fd0e]{
@@ -509,16 +507,6 @@ img {
     grid-row-gap: 80px;
     grid-template-columns: repeat(5, 1fr);
 }
-.list.small .details[data-v-b584a8de]{position: absolute;}
-.list.small[data-v-04d66030]{grid-template-columns: 120px auto;}
-.list.small[data-v-b584a8de] {grid-template-columns: 120px auto;}
-.list .title[data-v-04d66030]{display: none;}
-.list.small > div > div.status > a {display: none;}
-
-.time .action.active {
-    Display: none;
-}
-
 .actions[data-v-04d66030], .details .status  {
     position: absolute;
     opacity: 0;
@@ -559,7 +547,6 @@ img {
 
 .text[data-v-04d66030] {
     overflow: scroll;
-    /* padding: 20px; */
     max-width: 140px;
     max-height: 60px;
 }
@@ -1066,8 +1053,3 @@ div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(20) {
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.activity-text > div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active {
-    background: none;
-    content: url(https://files.catbox.moe/82z26q.png);
-}
