@@ -254,13 +254,18 @@ img {
 .name[data-v-5445dac8] {
     color: rgb(var(--saiko-white));
 }
-
+/* - Follow and options - */
 .header-wrap .actions .nav-btn {
-    margin-bottom: 8px;
-    border-radius: 20px;
-    width: 200px;
+    Position: absolute;
+    Top: 370px;
+    Left: 1425px;
+}
+.dropdown[data-v-1cc2919e]{
+    Top: 60px;
+    Left: 70px
 }
 
+/* - Header navegation - */
 .header-wrap .nav-wrap {
     bottom: 795px;
     left: 788px;
@@ -269,7 +274,6 @@ img {
     margin: auto;
     z-index: 2;
 }
-
 .header-wrap .nav-wrap .link:nth-child(9) {
     content: url(https://files.catbox.moe/5kiwxg.png) !important;
     height: 80px;
@@ -443,9 +447,11 @@ img {
 }
 .time[data-v-04d66030] {
     font-size: 10px;
+    font-family: 'Persona5';
     top: 1px;
     right: 10px;
     background: inherit;
+    opacity: 0.9;
     border-radius: 7px;
 }
 
@@ -646,24 +652,6 @@ border-radius: 0 0 0 4px;
 
 .lists > div > div > div.list-entries > div > div.cover {
     max-height: 250px;
-}
-
-/* - Unfollow botton - */
-.unfollow[data-v-39573fe2] {
-    background: url(https://files.catbox.moe/kn4bdj.png);
-}
-
-.medialist.cards .entry-card .title {
-    background: rgba(var(--color-foreground),.8) !important;
-    backdrop-filter: blur(2px) !important;
-}
-
-.medialist.cards .entry-card .edit {
-    background: rgb(var(--Persona5-red)) !important;
-}
-
-.tooltip {
-    backdrop-filter: blur(2px) !important;
 }
     
 /* favourite enlarge while hover*/
