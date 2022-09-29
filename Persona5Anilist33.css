@@ -413,7 +413,7 @@ img {
 .list .title[data-v-04d66030]{display: none;}
 .time .action.active {Display: none;}
 .activity-entry > .wrap > .time:hover {background: none;}
-
+.activity-entry .like-wrap .users {display: none;}
 .activity-message .wrap > .actions, .activity-text .wrap > .actions {position: relative;}
 
 @media (min-width: 1540px) {
