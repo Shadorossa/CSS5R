@@ -411,6 +411,7 @@ img {
 .list.small > div > div.status > a {display: none;}
 .list .title[data-v-04d66030]{display: none;}
 .time .action.active {Display: none;}
+.activity-entry > .wrap > .time:hover {background: none;}
 
 .activity-message .wrap > .actions, .activity-text .wrap > .actions {position: relative;}
 
@@ -446,11 +447,12 @@ img {
     }
 }
 .time[data-v-04d66030] {
-    font-size: 10px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 12px;
     font-family: 'Persona5';
     top: 1px;
     right: 10px;
-    background: inherit;
     opacity: 0.9;
     border-radius: 7px;
 }
@@ -473,12 +475,17 @@ img {
     margin-top: -10px;
 }
 
+.el-dropdown {
+    top: 1px;
+}
 /* - Activity animation - */
 .details .status:hover {
     Opacity: 1;
     transition: var(--transition-normal)
 }
 .details .status {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     Opacity: 0;
     transition: var(--transition-fast)
 }
@@ -489,10 +496,12 @@ img {
     transition: var(--animation-normal)
 }
 .actions[data-v-04d66030] {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     bottom: 2px;
     right: 8px;
     opacity: 0;
-    transition: var(--transition-fast)
+    transition: var(--transition-fast);
+    color: red;
 }
 .activity-entry .wrap:hover .list.small .cover {filter: blur(8px)}
 
