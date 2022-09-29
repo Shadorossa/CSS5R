@@ -140,6 +140,7 @@ display: none !important;
 /*--------------------------------------------------------- Header: navegation ---------------------------------------------------------*/
 
 #nav {
+    transition: none !important;
     position: absolute;
     display: flex;
     height: 60px;
