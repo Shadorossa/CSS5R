@@ -146,7 +146,7 @@ display: none !important;
     height: 60px;
     justify-content: center;
     left: 40px;
-    top: 50.4%;
+    top: 50.4% !important;
     width: 35%;
     border-radius: 0 0 70px 70px;
 }
