@@ -85,7 +85,7 @@ body,
     --Reinhard-image: url(https://i.imgur.com/wOGVvzL.png); --Reinhard-gif: url(https://pa1.narvii.com/6255/7341928f059fac79f12fe9bf65d10854c436748a_hq.gif);
     --Joe-image: url(https://i.pinimg.com/550x/93/71/f6/9371f646bff2d26360c8d9c42f6263cf.jpg); --Joe-gif: url(https://c.tenor.com/0__k92cmME4AAAAC/drink-thirsty.gif);
     --Takasugi-image: url(https://s4.anilist.co/file/anilistcdn/character/large/b2948-Er1xnL05k1oU.png); --Takasugi-gif: url(https://c.tenor.com/rDF2WZXh_xYAAAAC/takasugi-shinsuke-takasugi.gif);
-    --Shiki-image: url(https://files.catbox.moe/oegd4i.png); --Shiki-gif: url(https://c.tenor.com/Ec4hso3hz6EAAAAC/shiki-ryougi.gif);
+    --Akechi-image: url(https://files.catbox.moe/5p50va.png); --Akechi-gif: url(http://pa1.narvii.com/6566/7c9f8ed9aa414d6fb797020c8df7afed79a8a0f2_00.gif);
 
     /* - Character confidant - */
     --joker-confidant: url(https://files.catbox.moe/85kyr4.png); 
@@ -691,7 +691,7 @@ border-radius: 0 0 0 4px;
 /*Gintoki + Confidant*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1) { background-image: var(--gintoki-image) !important; transition: var(--transition-fast);}
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):hover { background-image: var(--gintoki-gif) !important; transition: var(--transition-normal);}
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):after {content: var(--joker-confidant); position: absolute; overflow: overlay;transform: translate(42px, -36px);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):after {content: var(--joker-confidant); position: absolute; overflow: overlay;transform: translate(42px, -36px);}
 
 /*Reinhard + Confidant*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(2) { background-image: var(--Reinhard-image) !important; transition: var(--transition-fast);}
@@ -701,17 +701,17 @@ border-radius: 0 0 0 4px;
 /*Joe + Confidant*/
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3) { background-image: var(--Joe-image) !important; transition: var(--transition-fast); }
 .content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):hover { background-image: var(--Joe-gif) !important; transition: var(--transition-normal);}
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(3):after {content: var(--akechi-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(1):after {content: var(--akechi-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
+
+/*Akechi + Confidant*/
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4) { background-image: var(--Akechi-image) !important; transition: var(--transition-fast);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):hover { background-image: var(--Akechi-gif) !important; transition: var(--transition-normal);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):after {content: var(--maruki-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
 
 /*Takasugi + Confidant*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4) { background-image: var(--Takasugi-image) !important; transition: var(--transition-fast);}
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):hover { background-image: var(--Takasugi-gif) !important; transition: var(--transition-normal);}
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(4):after {content: var(--makoto-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
-
-/*Shiki + Confidant*/
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5) { background-image: var(--Shiki-image) !important; transition: var(--transition-fast);}
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):hover { background-image: var(--Shiki-gif) !important; transition: var(--transition-normal);}
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):after {content: var(--maruki-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5) { background-image: var(--Takasugi-image) !important; transition: var(--transition-fast);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):hover { background-image: var(--Takasugi-gif) !important; transition: var(--transition-normal);}
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(5):after {content: var(--makoto-confidant); position: absolute; overflow: overlay;transform: translate(42px, -40px);}
 
 /*--------------------------------------------------------- Animation studio ---------------------------------------------------------*/
 
