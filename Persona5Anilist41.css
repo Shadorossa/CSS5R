@@ -807,64 +807,17 @@ body .overview .favourite.studio, .site-theme-contrast .overview .favourite.stud
 
 /*--------------------------------------------------------- Overview > Favorite: Anime (Limit) ---------------------------------------------------------*/
 
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(6),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(7),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(8),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(9),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(10),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(11),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(12),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(13),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(14),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(15),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(16),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(17),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(18),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(19),
-.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(20) { 
+.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(n+6) { 
     Display: none;}
 
 /*--------------------------------------------------------- Overview > Favorite: Manga (Limit) ---------------------------------------------------------*/
 
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(6),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(7),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(8),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(9),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(10),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(11),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(12),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(13),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(14),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(15),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(16),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(17),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(18),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(19),
-.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(20) { 
+.content.container > div > div:nth-child(1) > div:nth-child(5) > div > a:nth-child(n+6) { 
     Display: none;}
 
 /*--------------------------------------------------------- Overview > Favorite: Character (Limit) ---------------------------------------------------------*/
 
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(6),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(7),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(8),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(9),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(10),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(11),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(12),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(13),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(14),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(15),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(16),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(17),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(18),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(19),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(20),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(21),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(22),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(23),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(24),
-.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(25) { 
+.content.container > div > div:nth-child(1) > div:nth-child(6) > div > a:nth-child(n+6) { 
     Display: none;}
 
 /*--------------------------------------------------------- Overview/Favorite > Staff: profile image ---------------------------------------------------------*/
